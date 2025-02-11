@@ -1,4 +1,4 @@
-public class HolaMundo {
+public class Test2 {
 
     public static void main (String[] args) {
         Integer num1 = new Integer("125");
