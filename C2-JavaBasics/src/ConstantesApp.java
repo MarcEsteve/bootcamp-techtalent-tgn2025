@@ -10,6 +10,7 @@ public class ConstantesApp {
 		System.out.println("Esto es un cambio desde Eclipse en su WorkSpace "
 				+ "dentro de mi repositorio LOCAL sincronizado con Github.com");
 		
+		
 	}
 
 }
