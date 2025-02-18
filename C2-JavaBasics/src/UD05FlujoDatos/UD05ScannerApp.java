@@ -1,3 +1,4 @@
+package UD05FlujoDatos;
 import java.util.Scanner;
 
 public class UD05ScannerApp {
