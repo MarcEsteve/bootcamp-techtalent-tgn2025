@@ -11,7 +11,7 @@ public class OpComparacionRelacionApp {
 //		System.out.println(result);
 		
 //		Operadores lógicos "condicionales" AND && y OR ||
-		result = (op1 >3 && op2<15);
+		result = (op1 > 3 && op2 < 15);
 		System.out.println(result);
 		
 		
