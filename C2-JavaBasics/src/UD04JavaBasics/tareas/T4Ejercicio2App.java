@@ -13,7 +13,7 @@ public class T4Ejercicio2App {
 		System.out.println("Variable A = " + A);
 		System.out.println("Variable C = " + C);
 		
-		double resultadoSuma = N + A;
+//		double resultadoSuma = N + A;
 
 		// Muestra la suma de N + A y la diferencia de A - N
 		System.out.println(N + " + " + A + " = " + (N + A));

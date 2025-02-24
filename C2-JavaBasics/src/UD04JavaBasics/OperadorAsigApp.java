@@ -8,6 +8,8 @@ public class OperadorAsigApp {
 		boolean exito = true;
 		a = 40;
 		exito = false;
+		System.out.println(a);
+		System.out.println(exito);
 		
 	}
 
