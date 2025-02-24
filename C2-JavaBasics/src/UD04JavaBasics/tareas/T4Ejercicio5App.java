@@ -14,6 +14,7 @@ public class T4Ejercicio5App {
         System.out.println("C = " + C);
         System.out.println("D = " + D);
         
+        // Ahora asignamos las referencias a otras variables
 		B=C;
 		System.out.println("Asigno a B igual a C y tenemos B igual a " + (B));
 		C=A;
