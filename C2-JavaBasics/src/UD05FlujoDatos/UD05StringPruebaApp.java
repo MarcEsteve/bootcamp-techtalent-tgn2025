@@ -1,6 +1,6 @@
 package UD05FlujoDatos;
 
-public class UD5StringPruebaApp {
+public class UD05StringPruebaApp {
 
 	public static void main(String[] args) {
 

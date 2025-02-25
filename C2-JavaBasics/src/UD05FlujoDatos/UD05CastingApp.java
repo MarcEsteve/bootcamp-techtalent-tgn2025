@@ -1,6 +1,6 @@
 package UD05FlujoDatos;
 
-public class UD5CastingApp {
+public class UD05CastingApp {
 
 	public static void main(String[] args) {
 		// Casting implícito de int a double
