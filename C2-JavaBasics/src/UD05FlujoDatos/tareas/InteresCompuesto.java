@@ -10,6 +10,8 @@ public class InteresCompuesto {
         double capitalFinal = capitalInicial * Math.pow(Math.E, tasaInteres * años);
         System.out.println("El capital final después de " + años + " años es: " 
         				+ capitalFinal);
+        
+        // Este ejercicio muestra el interés compuesto
 
 	}
 
