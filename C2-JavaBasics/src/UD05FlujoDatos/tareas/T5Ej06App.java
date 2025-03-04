@@ -15,7 +15,7 @@ public class T5Ej06App {
 		double precio = precioBase + precioBase * IVA;
 
 		JOptionPane.showMessageDialog(null, "" + "El precio final es: " 
-		+ precio);
+									+ precio);
 
 	}
 
