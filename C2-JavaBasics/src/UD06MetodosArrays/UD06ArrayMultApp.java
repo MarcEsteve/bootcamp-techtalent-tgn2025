@@ -24,10 +24,13 @@ public class UD06ArrayMultApp {
 		// Recorrer arrays multidimensionales
 		System.out.println("Primer Foreach");
 		// Recorrer la matriz utilizando un bucle foreach
+		//Posición --> valor
 		for (int[] fila : matriz) {
 			for (int elemento : fila) {
 				System.out.print(elemento + " \n");
 			}
+			//Primera vez de fila = {1,2,3,4,5};
+			//Primer valor de elemento = 1;
 //			System.out.println(); // Salto de línea después de cada fila
 		}
 		System.out.println("For habitual de recorrer arrays");
@@ -36,6 +39,7 @@ public class UD06ArrayMultApp {
 				System.out.println(matriz[i][j]);
 			}
 		}
+		//Para revisar el código: https://pythontutor.com/java.html
 
 	}
 }
