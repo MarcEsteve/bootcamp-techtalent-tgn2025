@@ -5,9 +5,12 @@ import javax.swing.JOptionPane;
 public class T5Ej12App {
 
 	public static void main(String[] args) {
+		
+		//Declaración de variables
 		String pass = "12345", passUsuario = "", mensaje = "";
 		int intentos = 0;
 		
+		//Bucle de intentos
 		while(intentos<3) {
 			
 			passUsuario=JOptionPane.
@@ -24,6 +27,7 @@ public class T5Ej12App {
 			if(intentos == 3) {
 				mensaje = "Agotados el número de intentos";
 			}
+			
 		}
 		
 //		System.out.println(mensaje);
