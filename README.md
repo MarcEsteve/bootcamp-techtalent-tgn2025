@@ -37,10 +37,10 @@ El curs està estructurat en diferents mòduls per garantir un aprenentatge comp
 - Desenvolupament d'un projecte complet frontend + backend.
 - Presentació i defensa del projecte.
 
+(Coming soon)
 ## 📂 Recursos del repositori
-📌 **Exercicis i exemples** → 📁 `exercicis/`  
-📌 **Materials de classe** → 📁 `materials/`  
-📌 **Projectes pràctics** → 📁 `projectes/`  
+📌 **A** → 📁 `xxx/`  
+📌 **B** → 📁 `xxx/`   
 
 ## 📬 Contacte i dubtes
 Si tens algun dubte o suggeriment, pots obrir un **Issue** en aquest repositori o contactar amb el professorat.
