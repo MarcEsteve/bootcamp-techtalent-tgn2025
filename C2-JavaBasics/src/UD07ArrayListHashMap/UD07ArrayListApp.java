@@ -1,4 +1,4 @@
-package UD07ArrayListHastable;
+package UD07ArrayListHashMap;
 
 import java.util.ArrayList;
 import java.util.Iterator;
