@@ -13,6 +13,8 @@ public class ExemplePrintf {
         System.out.printf("La suma de %d i %d és %d%n", a, b, a + b);
         System.out.printf("El producte de %d * %d * %d és %d%n", a, b, c, a * b * c);
 
+        System.out.println("El producte de "+a+" * "+b+" * "+c+" és "+ (a * b * c));
+
         // Decimal (float i double)
         float numFloat = 3.1415f;
         double numDouble = 12345.6789;
@@ -39,7 +41,7 @@ public class ExemplePrintf {
         // Formatant números amb espais i zeros
         int numFormat = 7;
         System.out.printf("Número amb espais: %5d%n", numFormat);  // 5 espais abans
-        System.out.printf("Número amb zeros: %05d%n", numFormat);  // 00007
+        System.out.printf("Número amb zeros: %03d%n", numFormat);  // 007
 
         // Concatenació de printf (NO és correcte usar .println())
         System.out.printf("El número %d és primer o <=1%n", numInt);
