@@ -103,8 +103,16 @@ public class UD07ArrayListApp {
 		System.out.println(frutas.toString());
 		indexFruta = frutas.indexOf("Naranjas");
 		frutas.remove(indexFruta);
-		System.out.println(frutas.toString());
-
+//		System.out.println(frutas.toString());
+//		frutas.clear();
+//		System.out.println(frutas.toString());
+		
+		if (frutas.isEmpty()) {
+			System.out.println("No hay frutas en este array");
+		} else {
+			System.out.println(frutas.toString());
+		}
+		
 	}
 
 }
