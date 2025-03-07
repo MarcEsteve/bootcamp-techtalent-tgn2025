@@ -1,10 +1,17 @@
 package UD06MetodosArrays.tareas;
+
+import javax.swing.JOptionPane;
+
 public class T6Ej03primosApp {
 
 	public static void main(String[] args) {
 		int numPrimo = 13; //Número que revisamos si es primo
 //		boolean primoSiNo = true; //Booleano que guarda si es o no primo
-		//Dividimos este numPrimo por todos sus números inferiores para comprobar si es primo o no
+		//Dividimos este numPrimo por todos sus números inferiores para comprobar 
+		//si es primo o no
+		numPrimo = Integer.parseInt(JOptionPane.showInputDialog(""
+				+ "Introduce el número: "));
+
 		
 		//El resultado final de decir si es primo o no el número
 		if (numeroPrimo(numPrimo)) {
@@ -25,9 +32,14 @@ public class T6Ej03primosApp {
 		
 		for (int i = 2; i <= Math.sqrt(valorPrimo); i++) {
             if (valorPrimo % i == 0) {
-				return false;
+            	primoSiNo = false;
+				return primoSiNo;
+				//Equivalente:
+				//primoSiNo = false;
+				//break;
 			}
 		}
+		
 		return primoSiNo;
 	}
 
