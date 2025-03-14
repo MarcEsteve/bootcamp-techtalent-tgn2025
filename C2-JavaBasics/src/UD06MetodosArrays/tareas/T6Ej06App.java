@@ -50,6 +50,6 @@ public class T6Ej06App {
 
 //	Ejemplo similar de Daniel
 	public static int contarCifrasDaniel(int numero) {
-        return String.valueOf(numero).length();
+		return String.valueOf(numero).length();
 	}
 }
