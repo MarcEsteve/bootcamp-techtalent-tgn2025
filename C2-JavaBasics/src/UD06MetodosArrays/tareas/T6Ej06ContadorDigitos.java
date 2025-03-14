@@ -2,7 +2,7 @@ package UD06MetodosArrays.tareas;
 
 import java.util.Scanner;
 
-public class T6Ej06App {
+public class T6Ej06ContadorDigitos {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
