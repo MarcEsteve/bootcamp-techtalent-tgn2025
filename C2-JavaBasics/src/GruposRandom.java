@@ -21,7 +21,7 @@ public class GruposRandom {
         alumnos.add("Paula");
         alumnos.add("Dani");
         alumnos.add("Ilyas");
-        alumnos.add("Grupo2");
+        alumnos.add("Schneider");
 
         // Mezclar la lista de alumnos
         Collections.shuffle(alumnos);
