@@ -2,7 +2,6 @@ package UD06MetodosArrays.tareas;
 
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
 
 public class T6Ej09extra {
 
