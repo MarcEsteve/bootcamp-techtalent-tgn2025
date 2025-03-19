@@ -1,5 +1,7 @@
 package UD06MetodosArrays.tareas;
 
+import javax.swing.JOptionPane;
+
 public class T6Ej08App {
 
 	public static void main(String[] args) {
@@ -16,7 +18,9 @@ public class T6Ej08App {
 		// Recorrer y mostrar todos los valores
 		
 		for (int i = 0; i < numeros.length; i++) {
-            System.out.println("Índice: " + i + " - Valor: " + numeros[i]);
+//            System.out.println("Índice: " + i + " - Valor: " + numeros[i]);
+            JOptionPane.showMessageDialog(null, "Índice: " + i 
+            								+ " - Valor: " + numeros[i]);
 		}
 
 	}
@@ -24,7 +28,7 @@ public class T6Ej08App {
 	private static void rellenarValores(int[] numeros) {
 		// Rellenar valores por pantalla JOPtionPane
 		for (int i = 0; i < numeros.length; i++) {
-			numeros[i] = Integer.parseInt(javax.swing.JOptionPane.showInputDialog("" 
+			numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("" 
 					+ "Introduce un número"));
 		}
 
