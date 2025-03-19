@@ -23,7 +23,7 @@ public class T6Ej12App {
 		String num2checkIntro = sc.nextLine();
 		checkArray(arrayCreado, num2checkIntro);
 		System.out.println("\nSe ha generado el array cuyo digito escogido "
-				+ "coincide con los valores del array generado anteriormente:");
+				+ "\ncoincide con los valores del array generado anteriormente:");
 		imprimirArray(newArraySelectedDigit(arrayCreado, num2checkIntro));
 		sc.close();
 	}
@@ -85,8 +85,8 @@ public class T6Ej12App {
 			}
 		}
 		int size = coincidencias;
-//    Elimino las posiciones que no tienen valor copiado y doy como length del nuevo array
-//    el valor del contador, que aumenta por cada valor copiado.
+//    	Elimino las posiciones que no tienen valor copiado y doy como length del nuevo array
+//    	el valor del contador, que aumenta por cada valor copiado.
 		int[] arrayFinal = new int[size];
 		// arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
 		/*
