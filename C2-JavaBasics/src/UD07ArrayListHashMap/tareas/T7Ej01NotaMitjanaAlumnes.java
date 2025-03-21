@@ -7,9 +7,9 @@ public class T7Ej01NotaMitjanaAlumnes {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		Map<String, ArrayList<Double>> notesAlumnes = demanarNotes(scanner);
-		Map<String, Double> mitjanesAlumnes = calcularMitjanes(notesAlumnes);
-		mostrarMitjanes(mitjanesAlumnes);
+		Map<String, ArrayList<Double>> notesAlumnes = demanarNotes(scanner); // Crean alumnos y notas
+		Map<String, Double> mitjanesAlumnes = calcularMitjanes(notesAlumnes); // Calculo las medias
+		mostrarMitjanes(mitjanesAlumnes); // Muestro
 
 		scanner.close();
 	}

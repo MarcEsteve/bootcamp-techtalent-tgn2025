@@ -16,7 +16,7 @@ public class T6Ej10App {
 //		System.out.println(numerosPrimos.length); //Devuelve el tamaño escogido
 
 		// 2. Pedimos 2 valores (max,min) entre los que este de rango el random por
-		// consola de scanner
+		// Consola de Scanner
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el valor mínimo:");
