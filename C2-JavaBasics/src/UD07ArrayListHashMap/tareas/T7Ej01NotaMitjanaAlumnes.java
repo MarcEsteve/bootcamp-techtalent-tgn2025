@@ -68,7 +68,7 @@ public class T7Ej01NotaMitjanaAlumnes {
 	public static void mostrarMitjanes(Map<String, Double> mitjanes) {
 		System.out.println("\n--- Nota mitjana dels alumnes ---");
 		for (Map.Entry<String, Double> entrada : mitjanes.entrySet()) {
-			System.out.printf("%s → %.2f%n", entrada.getKey(), entrada.getValue());
+			System.out.printf("%s 🡆 %.2f%n", entrada.getKey(), entrada.getValue());
 		}
 	}
 }
