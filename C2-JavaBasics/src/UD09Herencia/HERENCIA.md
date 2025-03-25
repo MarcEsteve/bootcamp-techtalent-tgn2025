@@ -1,4 +1,4 @@
-# 🧬 HERENCIA I MODIFICADORS D'ACCÉS EN JAVA
+# 🧬 HERENCIA I MODIFICADORS D'ACCÉS EN JAVA 🢆
 
 Aquest document explica com funciona la **herència** i els **modificadors d'accés** (`private`, `default`, `protected`, `public`) a Java, amb exemples de codi i estructura recomanada de paquets.
 
