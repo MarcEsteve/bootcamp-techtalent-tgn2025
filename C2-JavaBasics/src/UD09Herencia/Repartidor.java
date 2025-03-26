@@ -10,7 +10,7 @@ public class Repartidor extends Empleado {
 		this.nombre = ".";
 		this.apellido = "otrovalor";
 		this.edad = 16;
-		this.salario = 800.0;
+		this.salario = SALARIO_DEF;
 		this.zona = "";
 	}
 

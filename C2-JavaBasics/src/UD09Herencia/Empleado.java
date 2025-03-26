@@ -11,7 +11,7 @@ public abstract class Empleado implements Empleable {
 	// comisión? zona?
 
 	private String dni;
-	protected final static double SALARIO_DEF = 600;
+//	protected final static double SALARIO_DEF = 600;
 
 	// Constructores
 
