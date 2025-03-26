@@ -1,4 +1,4 @@
-package UD10Exceptions;
+package UD10TryCatch;
 
 public class PruebaInfinito {
 
