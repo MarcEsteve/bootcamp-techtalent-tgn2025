@@ -1,6 +1,6 @@
 package UD09Herencia;
 
-public class Empleado {
+public abstract class Empleado implements Empleable {
 	// Atributos
 	protected String nombre;
 	protected String apellido;
@@ -78,9 +78,9 @@ public class Empleado {
 	}
 
 	// Métodos
-	public boolean plus(double sueldoPlus) {
-		return false;
-	}
+//	public boolean plus(double sueldoPlus) {
+//		return false;
+//	}
 
 	// Métodos privados
 
@@ -94,5 +94,8 @@ public class Empleado {
 	public double calcBruto(double pagaExtra) {
 		return 0;
 	}
+
+	
+	public abstract boolean plus(double cantidad);
 
 }
