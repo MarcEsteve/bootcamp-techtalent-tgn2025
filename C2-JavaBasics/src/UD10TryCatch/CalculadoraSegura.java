@@ -11,7 +11,8 @@ public class CalculadoraSegura {
 		try {
 			System.out.print("Introdueix el primer número: ");
 			String primerText = scanner.nextLine();
-			int num1 = Integer.parseInt(primerText); // Pot llançar NumberFormatException
+			int num1 = Integer.parseInt(primerText); 
+			// Pot llançar NumberFormatException
 
 			System.out.print("Introdueix el segon número: ");
 			int num2 = scanner.nextInt(); // Pot llançar InputMismatchException
@@ -26,7 +27,7 @@ public class CalculadoraSegura {
 			System.out.println("⚠️ Error: introdueix un número enter vàlid.");
 		} catch (ArithmeticException e) {
 			System.out.println("⚠️ Error: no es pot dividir per zero.");
-		} catch (Exception e) {
+		} catch (Exception e) { //Seria como un else que captura todo lo demás
 			System.out.println("⚠️ Error inesperat: " + e.getMessage());
 		}
 
@@ -37,7 +38,7 @@ public class CalculadoraSegura {
 		} catch (NullPointerException e) {
 			System.out.println("⚠️ Error: estàs intentant accedir a un objecte nul.");
 		}
-
+	
 		System.out.println("Fi del programa.");
 		scanner.close();
 	}

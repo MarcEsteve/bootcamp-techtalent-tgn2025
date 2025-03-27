@@ -17,6 +17,7 @@ public class ExempleTryCatchFinally {
             System.out.println("✅ Bloc finally executat: tanquem l'escàner.");
             scanner.close(); // tanca el recurs encara que hi hagi hagut error
         }
+       
 
         System.out.println("Fi del programa.");
     }
