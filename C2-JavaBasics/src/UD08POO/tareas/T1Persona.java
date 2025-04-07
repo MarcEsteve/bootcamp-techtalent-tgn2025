@@ -1,6 +1,6 @@
 package UD08POO.tareas;
 
-public class Persona {
+public class T1Persona {
 
 	// Atributos
 	private String nombre;
@@ -15,7 +15,7 @@ public class Persona {
 	public static final char SEXO_HOMBRE = 'H';
 
 	// Constructores
-	public Persona() {
+	public T1Persona() {
 		this.nombre = "";
 		this.edad = 0;
 		this.DNI = "xxxxxxxxC";
@@ -25,7 +25,7 @@ public class Persona {
 		this.email = "";
 	}
 	
-	public Persona(String nombre, int edad) {
+	public T1Persona(String nombre, int edad) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.DNI = " xxxxxxxxC ";
@@ -35,7 +35,7 @@ public class Persona {
 		this.email = "";
 	}
 
-	public Persona(String nombre, int edad, String dni, 
+	public T1Persona(String nombre, int edad, String dni, 
 					char sexo, double peso, double altura, String email) {	
 		this.nombre = nombre;
 		this.edad = edad;

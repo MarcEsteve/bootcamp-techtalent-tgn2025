@@ -1,6 +1,6 @@
 package UD08POO.tareas;
 
-public class Electrodomestico {
+public class T3Electrodomestico {
 
 	// CONSTANTES
 	private final static double PRECIO_BASE_PRED = 100;
@@ -31,20 +31,20 @@ public class Electrodomestico {
 	}
 
 	// Contructores
-	public Electrodomestico() {
+	public T3Electrodomestico() {
 		this.precioBase = PRECIO_BASE_PRED;
 		this.color = COLOR_PRED;
 		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;
 		this.peso = PESO_PRED;
 	}
 
-	public Electrodomestico(double precio, double peso) {
+	public T3Electrodomestico(double precio, double peso) {
 		this();
 		this.precioBase = precio;
 		this.peso = peso;
 	}
 
-	public Electrodomestico(double precio, double peso, ColorEnum color, ConsumoEnum consumoEnergetico) {
+	public T3Electrodomestico(double precio, double peso, ColorEnum color, ConsumoEnum consumoEnergetico) {
 		this.precioBase = precio;
 		this.peso = peso;
 		this.color = color;

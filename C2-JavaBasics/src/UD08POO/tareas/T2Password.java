@@ -1,18 +1,18 @@
 package UD08POO.tareas;
 
-public class Password {
+public class T2Password {
 	
 	// Atributos
 	private int longitud;
 	private String password;
 	
 	// Constructores
-	public Password() {
+	public T2Password() {
 		this.longitud = 8;
 		this.password = "";
 	}
 	
-	public Password(int longitud) {
+	public T2Password(int longitud) {
 		this.longitud = longitud;
 		this.password = generarPassword(longitud);
 	}

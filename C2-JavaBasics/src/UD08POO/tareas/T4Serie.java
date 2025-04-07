@@ -1,6 +1,6 @@
 package UD08POO.tareas;
 
-public class Serie {
+public class T4Serie {
 	// Atributos
 	private String titulo;
 	private int nTemporadas;
@@ -12,7 +12,7 @@ public class Serie {
 	private final boolean ENTREGADO_DEF = false;
 
 	// Constructores
-	public Serie() {
+	public T4Serie() {
 		this.titulo = "";
 		this.nTemporadas = TEMPORADAS_DEF;
 		this.entregado = ENTREGADO_DEF;
@@ -20,7 +20,7 @@ public class Serie {
 		this.creador = "";
 	}
 
-	public Serie(String nombre, String director) {
+	public T4Serie(String nombre, String director) {
 		this(); // En este caso hace referencia a nTemporadas, entregado y genero Serie()
 		// Equivalente
 //		this.nTemporadas = TEMPORADAS_DEF;
@@ -31,7 +31,7 @@ public class Serie {
 	}
 	// new Serie("Juego de Tronos", "David Benioff");
 
-	public Serie(String nombre, int temp, String gendre, String director) {
+	public T4Serie(String nombre, int temp, String gendre, String director) {
 		this();
 //         this.entregado = false;//Equivalente
 		this.titulo = nombre;
