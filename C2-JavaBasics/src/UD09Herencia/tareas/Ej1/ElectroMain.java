@@ -20,7 +20,7 @@ public class ElectroMain {
 		System.out.println("Precio final: " + electrodomestico3.precioFinal() + " €");
 
 		Lavadora lavadora1 = new Lavadora();
-		System.out.println("Lavadora 1:");
+		System.out.println("\nLavadora 1:");
 		System.out.println(lavadora1);
 		System.out.println("Precio final: " + lavadora1.precioFinal() + " €");
 
@@ -35,7 +35,7 @@ public class ElectroMain {
 		System.out.println("Precio final: " + lavadora3.precioFinal() + " €");
 
 		Television television1 = new Television();
-		System.out.println("Televisión 1:");
+		System.out.println("\nTelevisión 1:");
 		System.out.println(television1);
 		System.out.println("Precio final: " + television1.precioFinal() + " €");
 
@@ -48,6 +48,8 @@ public class ElectroMain {
 		System.out.println("\nTelevisión 3:");
 		System.out.println(television3);
 		System.out.println("Precio final: " + television3.precioFinal() + " €");
+		
+		
 	}
 
 }

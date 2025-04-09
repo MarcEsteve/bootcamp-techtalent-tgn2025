@@ -65,5 +65,14 @@ public class Television extends Electrodomesticos {
 
 		return precioFinal;
 	}
+	
+	@Override
+	public String toString() {
+		return "Precio base: " + precioBase + " €\nColor: " + color 
+				+ "\nConsumo energético: " + consumoEnergetico
+				+ "\nPeso: " + peso + " kg"
+				+ "\nResolucion: " + resolucion + " pulgadas"
+				+ "\nTDT: " + sintonizadorTDT;
+	}
 
 }

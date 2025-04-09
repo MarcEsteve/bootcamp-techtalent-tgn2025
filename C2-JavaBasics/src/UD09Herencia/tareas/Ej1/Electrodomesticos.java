@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Electrodomesticos {
 	// Constantes
-	protected static final List<String> COLORES_DISPONIBLES = Arrays.asList("blanco", "negro", "rojo", "azul", "gris");
+	protected static final List<String> COLORES_DISPONIBLES = 
+					Arrays.asList("blanco", "negro", "rojo", "azul", "gris");
 	protected static final char CONSUMO_ENERGETICO_DEFAULT = 'F';
 	protected static final double PRECIO_BASE_DEFAULT = 100;
 	protected static final double PESO_DEFAULT = 5;
@@ -35,7 +36,8 @@ public class Electrodomesticos {
 //      this.consumoEnergetico =CONSUMO_ENERGETICO_DEFAULT;
 	}
 
-	public Electrodomesticos(double precioBase, double peso, String color, char consumoEnergetico) {
+	public Electrodomesticos(double precioBase, double peso, String color, 
+							char consumoEnergetico) {
 		this.precioBase = precioBase;
 		this.peso = peso;
 		this.color = comprobarColor(color);
@@ -129,7 +131,8 @@ public class Electrodomesticos {
 
 	@Override
 	public String toString() {
-		return "Precio base: " + precioBase + " €\nColor: " + color + "\nConsumo energético: " + consumoEnergetico
+		return "Precio base: " + precioBase + " €\nColor: " + color 
+				+ "\nConsumo energético: " + consumoEnergetico
 				+ "\nPeso: " + peso + " kg";
 	}
 
