@@ -34,8 +34,7 @@ CREATE TABLE `productos` (
   `PRECIO` double DEFAULT NULL,
   `FECHA` varchar(30) DEFAULT NULL,
   `IMPORTADO` varchar(30) DEFAULT NULL,
-  `PAÍSDEORIGEN` varchar(30) DEFAULT NULL,
-  `FOTO` varchar(30) DEFAULT NULL
+  `PAÍSDEORIGEN` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 

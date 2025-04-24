@@ -33,8 +33,7 @@ CREATE TABLE `clientes` (
   `DIRECCIÓN` varchar(30) DEFAULT NULL,
   `POBLACIÓN` varchar(30) DEFAULT NULL,
   `TELÉFONO` varchar(30) DEFAULT NULL,
-  `RESPONSABLE` varchar(30) DEFAULT NULL,
-  `HISTORIAL` varchar(30) DEFAULT NULL
+  `RESPONSABLE` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
