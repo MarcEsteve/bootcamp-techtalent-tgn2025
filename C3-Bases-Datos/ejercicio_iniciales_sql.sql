@@ -12,3 +12,8 @@ SELECT NOMBREARTÍCULO AS `DEPORTES`, PRECIO AS `ENTRE 100 y 200€` FROM PRODUC
 
 -- 4. Realizar una consulta que muestre los productos cuyo país no sea España. 
 
+SELECT * 
+FROM productos 
+WHERE (SECCIÓN="DEPORTES" AND PAÍSDEORIGEN = "ESPAÑA")
+OR 
+PRECIO > 350;
