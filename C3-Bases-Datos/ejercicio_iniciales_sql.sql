@@ -36,4 +36,37 @@ SELECT NOMBREARTÍCULO, SECCIÓN, FECHA
 FROM PRODUCTOS 
 WHERE FECHA BETWEEN '2001-05-01' AND '2001-12-15';
 
--- Comentario
+SELECT NOMBREARTÍCULO, SECCIÓN, FECHA FROM PRODUCTOS WHERE FECHA>='2001-05-01' AND FECHA<='2001-12-15';
+
+
+
+-- CLÁUSULA ORDER BY
+-- 1. Realizar una consulta que muestre aquellos productos españoles cuya fecha esté comprendida entre febrero y mayo del 2002. Ordenar los resultados por el campo “Nombre artículo” descendentemente.
+
+SELECT * 
+FROM PRODUCTOS 
+WHERE FECHA BETWEEN '2002-02-01' AND '2002-05-31'
+ORDER BY NOMBREARTÍCULO DESC;
+
+-- 2. Realizar una consulta que muestre los campos “Empresa”, “Dirección” y “Población” de la tabla “Clientes”. Ordenar la consulta por el campo “Población” ascendentemente y por “Dirección” descendentemente.
+
+SELECT EMPRESA, DIRECCIÓN, POBLACIÓN
+FROM CLIENTES
+ORDER BY POBLACIÓN, DIRECCIÓN DESC;
+
+-- 3. Realizar una consulta que muestre todos los campos de la tabla “Clientes”. Ordenar los resultados por el campo “Población” ascendentemente. 
+
+SELECT * FROM CLIENTES ORDER BY POBLACIÓN;
+
+
+--Ejercicios CLÁUSULA GROUP BY
+--1. Realizar una consulta que muestre que poblaciones de los “Clientes”.
+
+SELECT POBLACIÓN FROM CLIENTES GROUP BY POBLACIÓN;
+
+--2. Realizar una consulta que muestre las secciones de nuestros productos.
+SELECT SECCIÓN FROM `productos` GROUP BY SECCIÓN;
+-- 6 secciones totales
+
+-- Agrupación sin sentido, muestra una clave primeria
+SELECT `CÓDIGOARTÍCULO`, SECCIÓN FROM `productos` GROUP BY `SECCIÓN`;
