@@ -1,4 +1,4 @@
-CREATE DATABASE biblio;
+CREATE DATABASE biblio2025;
 USE biblio;
 
 CREATE TABLE editorial (
