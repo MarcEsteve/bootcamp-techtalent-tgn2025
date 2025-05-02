@@ -53,3 +53,12 @@ UPDATE estacion SET nombre = 'Barcelona' WHERE id = 1;
 UPDATE estacion SET nombre = 'Madrid' WHERE id = 2;
 UPDATE estacion SET nombre = 'Valencia' WHERE id = 3;
 UPDATE estacion SET nombre = 'Bilbao' WHERE id = 4;
+
+-- Elimino una estación 2 para mostrar el ON DELETE NO ACTION
+--Primero la muestra relacionada con la estación:
+DELETE FROM muestra WHERE `muestra`.`id` = 3;
+--Luego la estación:
+DELETE FROM estacion WHERE `estacion`.`id` = 2;
+
+-- Actualizo la estación de Valencia:
+UPDATE `estacion` SET `id` = '7' WHERE `estacion`.`id` = 3;
