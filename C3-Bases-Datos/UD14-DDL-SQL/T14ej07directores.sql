@@ -1,5 +1,5 @@
-CREATE DATABASE directores_despachos;
-USE directores_despachos;
+CREATE DATABASE directores_despachos2025;
+USE directores_despachos2025;
 CREATE TABLE despachos 
     (num INT,
     --AUTO_INCREMENT
