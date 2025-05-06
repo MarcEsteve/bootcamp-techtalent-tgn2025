@@ -28,10 +28,11 @@ FROM Customers c, Orders o
 WHERE c.CustomerName="Around the Horn" AND c.CustomerID=o.CustomerID;
 
 -- SQL COUNT(), AVG(), SUM(), MIN(), MAX()
-SELECT COUNT(CustomerID) FROM Customers;
-SELECT COUNT(ProductID) FROM Products;
+-- Funciones de agregación/agregado
+SELECT COUNT(CustomerID) AS `Número de clientes` FROM Customers;
+SELECT COUNT(ProductID) AS `Número de productos` FROM Products;
 
-SELECT AVG(Price) FROM Products;
+SELECT AVG(Price)  AS `Media de precios` FROM Products;
 
 SELECT SUM(Quantity) FROM OrderDetails;
 
