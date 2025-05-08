@@ -73,3 +73,15 @@ SELECT * FROM PRODUCTOS WHERE  PRECIO <
 -- Resultado final:
 
 SELECT NOMBREARTÍCULO, PRECIO FROM PRODUCTOS WHERE SECCIÓN='CONFECCIÓN' AND PRECIO>(SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='JUGUETERÍA');
+
+-- Subconsulta de lista
+-- Busca los precios de Juguetería y muestra TODOS los precios de Marruecos que sean menores que esa lista de precios de Juguetería(Luego muestra CUALQUIERA sea menor)
+
+-- Primero calculo la subconsulta "hija"
+-- SELECT PRECIO FROM PRODUCTOS WHERE SECCIÓN='JUGUETERÍA';
+
+-- muestra TODOS los precios de Marruecos que sean mayores que esa lista de precios de Juguetería
+-- SELECT PRECIO FROM PRODUCTOS WHERE SECCIÓN='MARRUECOS' AND PRECIO > ALL (lista precios juguetería);
+
+-- Resultado final:
+SELECT PRECIO FROM PRODUCTOS WHERE SECCIÓN='MARRUECOS' AND PRECIO > ALL (SELECT PRECIO FROM PRODUCTOS WHERE SECCIÓN='JUGUETERÍA');
