@@ -46,11 +46,30 @@ GROUP BY Employees.LastName
 HAVING COUNT(Orders.OrderID) > 10;
 
 -- SUBCONSULTAS SQL
--- Ejercicio:
+
+-- Ejercicio 1:
 -- Busca la media de precios de Ferretería y muestra los precios que sean menores que esa media
 
 -- Primero calculo la subconsulta "hija"
 -- SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='FERRETERÍA';
+-- Equivale a un número "13.6258"
+
+-- Segundo paso lo comparo con la media globa
+-- SELECT * FROM PRODUCTOS WHERE  PRECIO < 13.62;
 
 SELECT * FROM PRODUCTOS WHERE  PRECIO < 
     (SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='FERRETERÍA');
+
+-- Ejercicio 2:
+-- Muestra los artículos de confección que estan por encima de la media de precios de jugueteria.
+
+-- (*1)Media de precios de jugueteria: 
+-- SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='JUGUETERÍA';
+-- Valor: 359.53€
+
+-- Muestra los artículos de confección mayores que (*1):
+-- SELECT NOMBREARTÍCULO, PRECIO FROM PRODUCTOS WHERE SECCIÓN='CONFECCIÓN' AND PRECIO > (mediajuegueteria *1);
+
+-- Resultado final:
+
+SELECT NOMBREARTÍCULO, PRECIO FROM PRODUCTOS WHERE SECCIÓN='CONFECCIÓN' AND PRECIO>(SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='JUGUETERÍA');
