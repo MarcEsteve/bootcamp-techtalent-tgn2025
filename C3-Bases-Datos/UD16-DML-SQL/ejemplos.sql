@@ -44,3 +44,13 @@ SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders
 FROM (Orders INNER JOIN Employees ON Orders.EmployeeID=Employees.EmployeeID)
 GROUP BY Employees.LastName
 HAVING COUNT(Orders.OrderID) > 10;
+
+-- SUBCONSULTAS SQL
+-- Ejercicio:
+-- Busca la media de precios de Ferretería y muestra los precios que sean menores que esa media
+
+-- Primero calculo la subconsulta "hija"
+-- SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='FERRETERÍA';
+
+SELECT * FROM PRODUCTOS WHERE  PRECIO < 
+    (SELECT AVG(PRECIO) FROM PRODUCTOS WHERE SECCIÓN='FERRETERÍA');
