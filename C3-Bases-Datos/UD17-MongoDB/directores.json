@@ -1,0 +1,11 @@
+[
+  { "DNI": "3333", "NomApels": "Garcia", "DNIJefe": null, "despacho": "2" },
+  { "DNI": "2345", "NomApels": "Esteve", "DNIJefe": null, "despacho": "4" },
+  { "DNI": "12345645", "NomApels": "Dani", "DNIJefe": null, "despacho": "5" },
+  { "DNI": "657", "NomApels": "Juan", "DNIJefe": null, "despacho": "10" },
+  { "DNI": "12376745", "NomApels": "Pedro", "DNIJefe": null, "despacho": "9" },
+  { "DNI": "878787", "NomApels": "Pepe", "DNIJefe": null, "despacho": "9" },
+  { "DNI": "444", "NomApels": "Mar", "DNIJefe": null, "despacho": "7" },
+  { "DNI": "777", "NomApels": "Marcos", "DNIJefe": null, "despacho": "6" },
+  { "DNI": "999", "NomApels": "Marquitos", "DNIJefe": null, "despacho": "8" }
+]
