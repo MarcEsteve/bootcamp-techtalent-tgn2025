@@ -6,7 +6,7 @@ public class GestorBD {
     static final String URL = "jdbc:mysql://localhost:3306/tiendainfo";
     static final String USER = "root";
     static final String PASSWORD = "";
-
+    
     public void insertarRegistro(String tabla, String columna, String valor) {
         Connection conexion = null;
         Statement statement = null;
@@ -16,13 +16,14 @@ public class GestorBD {
             String consulta = "INSERT INTO " + tabla + " (" + columna + ") "
             		+ "VALUES ('" + valor + "')";
             statement.executeUpdate(consulta);
-            System.out.println("Registro insertado en la tabla '" + tabla + "'");
+            System.out.println("Registro insertado en la tabla '" + tabla + "' en el campo " + columna + " el valor " + valor);
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
         } finally {
             try {
                 if (statement != null) statement.close();
                 if (conexion != null) conexion.close();
+                System.out.println("Conexión cerrada");
             } catch (SQLException e) {
                 System.out.println("Error al cerrar la conexión: " + e.getMessage());
             }

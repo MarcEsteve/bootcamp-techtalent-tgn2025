@@ -9,7 +9,7 @@ public class VentanaPrincipal extends JFrame {
     private JButton insertarButton, actualizarButton, eliminarButton, mostrarButton;
 
     public VentanaPrincipal() {
-        setTitle("Gestor de Base de Datos");
+        setTitle("Gestor de BD de Tienda Info Tabla Fabricantes");
         setSize(400, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -18,14 +18,14 @@ public class VentanaPrincipal extends JFrame {
 
         JPanel panelBotones = new JPanel(new FlowLayout());
         insertarButton = new JButton("Insertar");
+        mostrarButton = new JButton("Mostrar Tabla");
         actualizarButton = new JButton("Actualizar");
         eliminarButton = new JButton("Eliminar");
-        mostrarButton = new JButton("Mostrar Tabla");
 
         panelBotones.add(insertarButton);
+        panelBotones.add(mostrarButton);
         panelBotones.add(actualizarButton);
         panelBotones.add(eliminarButton);
-        panelBotones.add(mostrarButton);
 
         panelPrincipal.add(panelBotones, BorderLayout.NORTH);
 

@@ -1,5 +1,5 @@
 CREATE DATABASE biblio2025;
-USE biblio;
+USE biblio2025;
 
 CREATE TABLE editorial (
     claveditorial SMALLINT NOT NULL,
