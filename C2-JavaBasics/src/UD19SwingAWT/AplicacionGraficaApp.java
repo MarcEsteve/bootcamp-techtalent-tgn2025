@@ -1,4 +1,4 @@
-package UD19Swing;
+package UD19SwingAWT;
 
 public class AplicacionGraficaApp {
 
