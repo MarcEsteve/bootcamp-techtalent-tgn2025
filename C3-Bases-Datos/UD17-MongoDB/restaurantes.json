@@ -28,6 +28,30 @@
       "ubicacion": {"latitud": 48.8566, "longitud": 2.3522},
       "horas_apertura": {"lunes_a_viernes": "18:00 - 23:00", "sabado": "17:00 - 00:00", "domingo": "cerrado"},
       "calificaciones": [4.8, 4.7, 4.9]
+    },
+    {
+      "_id": 4,
+      "nombre": "El Rincón de Tapas",
+      "tipo_cocina": "Española",
+      "ubicacion": {"latitud": 41.1189, "longitud": 1.2445},
+      "horas_apertura": {"lunes_a_viernes": "12:00 - 23:30", "sabado": "12:00 - 00:30", "domingo": "12:00 - 22:00"},
+      "calificaciones": [4.6, 4.8, 4.7]
+    },
+    {
+      "_id": 5,
+      "nombre": "Taj Mahal Palace",
+      "tipo_cocina": "India",
+      "ubicacion": {"latitud": 18.9217, "longitud": 72.8330},
+      "horas_apertura": {"lunes_a_viernes": "11:30 - 23:00", "sabado": "11:30 - 23:30", "domingo": "12:00 - 22:30"},
+      "calificaciones": [4.4, 4.6, 4.5]
+    },
+    {
+      "_id": 6,
+      "nombre": "El Asador Argentino",
+      "tipo_cocina": "Argentina",
+      "ubicacion": {"latitud": -34.6037, "longitud": -58.3816},
+      "horas_apertura": {"lunes_a_viernes": "19:00 - 00:00", "sabado": "19:00 - 01:00", "domingo": "12:00 - 23:00"},
+      "calificaciones": [4.7, 4.9, 4.8]
     }
-  ]
+]
   
