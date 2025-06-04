@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Combinador de descendientes (espacio) */
+      /* div p {
+        background-color: yellow;
+      } */
+      /* Combinador de hijos "child" (>) */
+      /* div > p {
+        background-color: yellow;
+      } */
+      /* Combinador de adyacentes "adyacente" (+) */
+      /* div + p {
+        background-color: yellow;
+      } */
+      /* Combinador de hermanos "hermano" (~) */
+      div ~ p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector de descendientes</h1>
+    <p>Un primer párrafo que sin estilo.</p>
+    <div>
+      <p>Primer párrafo en el div.</p>
+      <section>
+        <p>Párrafo 2 en el div</p>
+      </section>
+    </div>
+    <p>Último párrafo fuera del div</p>
+
+    <h2>Hermanos adyacentes</h2>
+    <p>Un primer párrafo que sin estilo.</p>
+    <div>
+      <p>Primer párrafo en el div</p>
+      <p>Párrafo 2 en el div</p>
+    </div>
+    <p>Otro párrafo fuera del div</p>
+    <div>
+      <p>Más párrafos en otro div</p>
+      <p>Párrafo 2 en el div2</p>
+    </div>
+    <h2>Selector general de hermanos ~</h2>
+    <p>Se escribe con ~ se situa en Alt Gr + 4</p>
+    <p>Párrafo</p>
+    <div>
+      <p>Párrafo</p>
+    </div>
+    <p>Párrafo</p>
+    <code>Algun código</code>
+    <p>Párrafo</p>
+  </body>
+</html>
