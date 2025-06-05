@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [title~="flor"] {
+        border: 5px solid yellow;
+      }
+      [class|="arriba"] {
+        background-color: rgb(221, 0, 255);
+      }
+      [class^="arriba"] {
+        background-color: rgb(0, 157, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS [atributo ~ = "valor"]</h2>
+    <p>
+      Imágenes con el título del atributo que contenga "flor" con borde
+      amarillo.
+    </p>
+    <img src="flor1.jpg" title="Alguna flor" width="150" height="113" />
+    <img src="otra2.gif" title="flor de loto" width="224" height="162" />
+    <img src="tercera.png" title="arbol floral" width="200" height="358" />
+
+    <h2>CSS [atributo | = "valor"]</h2>
+    <h2 class="arriba-titular">Bienvenido</h2>
+    <p class="arriba-texto">Hola mundo!</p>
+    <p class="arribacontenido">Aprendiendo CSS y selectores de atributos</p>
+  </body>
+</html>

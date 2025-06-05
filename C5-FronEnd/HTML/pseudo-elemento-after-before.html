@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p::after {
+        content: " - Sufijo";
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+      }
+      p::before {
+        content: "Prefijo -";
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+      }
+      /* Poner una imagen before los párrafos */
+      p::before {
+        content: url("https://www.w3schools.com/css/smiley.gif");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-elemento "after"/"before</h1>
+    <p>CSS con pseudo-elemento "after"</p>
+    <p>Colocará detrás de los elementos seleccionados contenido específico</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium
+      dicta voluptates. Dolor obcaecati sequi architecto dolorem modi placeat.
+      Corporis aliquid tempora error quo amet sed, perferendis quam id illum?
+    </p>
+  </body>
+</html>

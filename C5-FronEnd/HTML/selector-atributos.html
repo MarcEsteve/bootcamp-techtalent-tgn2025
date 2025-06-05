@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a[target] {
+        background-color: yellow;
+        text-decoration:dotted underline;
+      }
+      a[target="_blank"] {
+        background-color: rgb(0, 255, 102);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS [attribute] Selector</h1>
+    <p>Los enlaces con target en amarillo</p>
+    <a href="web1.com">web1.com</a>
+    <a href="web2.com" target="_self">web2.com</a>
+    <a href="web3.com"> web3.com </a>
+    <a href="web4.com" target="_blank"> web4.com </a>
+  </body>
+</html>

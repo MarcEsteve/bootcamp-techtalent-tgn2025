@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+    <style>
+      /* Para solo el primer párrafo en azul */
+      /* p:first-child {
+        color: blue;
+      } */
+      /* Para solo el primer italic en azul de cada párrafo */
+      /* p i:first-child {
+        color: blue;
+      }   */
+      i.verde {
+        color: green;
+      }
+
+      p:first-child i {
+        color: blue;
+      }   
+
+    </style>
+  </head>
+  <body>
+    <p id="parrafo1">Soy una persona <i>fuerte</i>. Soy una persona <i class="verde">fuerte</i>.</p>
+    <p>Soy una persona <i>fuerte</i>. Soy una persona <i class="verde">fuerte</i>.</p>
+    <p>Soy una persona <i>fuerte</i>. Soy una persona <i class="verde">fuerte</i>.</p>
+  </body>
+</html>
