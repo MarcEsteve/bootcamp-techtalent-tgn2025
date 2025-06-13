@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  .flex-container > div {
+    background-color: #3498db;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    flex: 1;
+  }
+  
+  /* Ejemplos de propiedades del contenedor */
+  .row {
+    flex-direction: row;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
