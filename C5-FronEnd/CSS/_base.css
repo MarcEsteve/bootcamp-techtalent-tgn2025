@@ -1,0 +1,93 @@
+:root {
+    font-size: 1em;
+    box-sizing: border-box;
+
+    /* COLORS */
+    --color-olive: #9C9C81;
+    --color-sand: #DDBEA9;
+    --color-creme: #F0EFEB;
+    --color-black: #1D120B;
+    --color-grey:#7d7d7d;
+    --color-lavender: #705C6A;
+    --color-coffee: #3A2D32;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/*  Definition of top-level page grid (overall layout) */
+.page-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 1fr min-content;
+    grid-template-areas:    "menu   content "
+                            "footer footer  ";
+}
+
+@media only screen and (max-width: 800px) {
+    .page-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 1fr min-content;
+        grid-template-areas:    "menu"
+                                "content"
+                                "footer";
+    }
+}
+
+.menu {
+    grid-area: menu;
+    background-color: var(--color-sand);
+}
+.content {
+    grid-area: content;
+    background-color: var(--color-creme);
+}
+.footer {
+    grid-area: footer;
+    background-color: var(--color-olive);
+}
+
+
+
+/*** just custom styling ***/
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}    
+
+h1 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.button {
+    display: block;
+
+    width: 160px;
+    height: min-content;
+    padding: 0.7em; 
+    margin: 3rem auto;
+
+    border: none;
+    border-radius: 1em;
+    background-color: var(--color-creme);
+
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    color: var(--color-black);
+    border-color: var(--color-black);
+    background-color: var(--color-creme);
+}
