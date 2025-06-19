@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Sentencias de JavaScript</h1>
+    <p>
+      Un <strong>programa JavaScript </strong> es una lista de
+      <b>sentencias</b> para ser ejecutadas por un ordenador.
+    </p>
+    <p>JavaScript es de tipado débil y dinámico</p>
+
+    <p id="prova"></p>
+
+    <script>
+      var x, y, z; // Declaradas 3 variables (let, var o const son las palabras clave para declarar variables)
+      let a;
+      let b;
+      let c;
+      var numer1 = 3,
+        numer2 = 4,
+        resultado;
+      numer1 = "pepito";
+      //Asignación significa dar valor y tipo
+      x = 2; // Asignamos el valor 2 a x
+      y = 3; // Asignamos el valor 3 a y
+      z = x + y; // Asignamos la suma de x más y a z
+      document.getElementById("prova").innerHTML =
+        "El valor de z es " + z + ".";
+    </script>
+
+    <script>
+    //   Comentario que podria explicar el siguiente código: 
+    //  CTRL + ç para comentar o descomentar una línea
+      document.getElementById("unaId").innerHTML = "Texto que se mostrará";
+
+      var y = x + 2; // se declara una variable en esta línea y se explica en el comentario
+
+      /*
+Aquí se podría explicar
+
+en varias líneas o introducir los códigos
+
+que se mostraran a continuación
+
+bien explicado :
+*/
+      document.getElementById("otraId").innerHTML = "Más texto de ejemplo";
+
+    //   document.getElementById("terceraId").innerHTML = "Mi texto comentado";
+      document.getElementById("cuartaId").innerHTML = "Más ejemplos .";
+
+    /*
+        document.getElementById("myH").innerHTML = "texto comentado varias líneas";
+        document.getElementById("myP").innerHTML = "Segunda línea código ";
+     */
+    </script>
+  </body>
+</html>

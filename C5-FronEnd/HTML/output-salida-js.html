@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs HTML con JavaScript</title>
+ </head>
+ <body>
+
+    <script>
+        // Este script no tiene efecto sobre el párrafo de la id suma
+        // document.getElementById("suma").innerHTML = 3 + 3;
+    </script>
+    <h1>Resultado de una suma OUTPUT</h2>
+    <p>La suma de 3+1 es:</p>
+
+    <p id="suma"></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio porro ducimus perspiciatis vitae, modi deserunt enim corrupti repellat distinctio odio assumenda dicta reprehenderit voluptatum! Ut pariatur facere blanditiis tempore.</p>
+    <script>
+        // document.write(3+2);
+        // document.write("<br>Hola, mundo!");
+    </script>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui assumenda adipisci debitis, sit impedit dignissimos labore provident exercitationem corporis at et error laudantium quas officiis ad, nulla velit. Delectus, id?</p>
+
+    <script>
+        // Este script si afecta el párrrafo de la id suma
+        document.getElementById("suma").innerHTML = 3 + 1;
+    </script>
+    <script>
+        // window.alert(3 + 2);
+    </script>
+
+    
+    <h2>Escritura en la CONSOLA del navegador</h2>
+
+    <p>Para activar "Inspeccionar Elemento" pulsa F12.</p>
+
+    <script>
+        console.log(3 + 2);
+        console.log("Hola, mundo! esto es una prueba de consola");
+    </script>
+  
+    <h2>Utilización del Método window.print()</h2>
+
+    <p>Haga clic en el botón para imprimir la página actual.</p>
+
+    <button onclick="window.print()">Imprimir esta página</button>
+
+
+ </body>
+ </html>
