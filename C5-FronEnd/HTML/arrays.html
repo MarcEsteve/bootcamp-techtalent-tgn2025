@@ -10,13 +10,16 @@
 
     <p id="bici"></p>
     <p id="bici3"></p>
+    <p id="biciError"></p>
 
     <script>
       var bici = ["BH", "Orbea", "Specialized"];
       bici[3] = "Toyota"; // bici = ["BH", "Orbea", "Specialized", "Toyota"]
       document.getElementById("bici").innerHTML = bici[3];
-      bici[4]=13;
+      bici[4]=13; //No seria recomendable
+      bici[20]=true;
       document.getElementById("bici3").innerHTML = bici[4];
+      document.getElementById("biciError").innerHTML = bici[13];
     </script>
   </body>
 </html>
