@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional IF</title>
+</head>
+<body>
+    <h1>Condicional IF</h1>
+    <p>Resultado de tu nota</p>
+    <p id="nota"></p>
+    <script>
+        // Definimos una variable para la nota
+        let nota = 9;
+
+        if (nota >= 9) {
+            document.getElementById("nota").innerText = "Excelente";
+        } else if (nota >= 7) {
+            document.getElementById("nota").innerText = "Notable";
+        } else if (nota >=5) {
+            document.getElementById("nota").innerText = "Aprobado";
+        } else {
+            document.getElementById("nota").innerText = "Suspendido";
+        }
+    </script>
+    <p>Este es un ejemplo básico de una estructura condicional en JavaScript.</p
+</body>
+</html>
