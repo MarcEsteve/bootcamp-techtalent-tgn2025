@@ -37,8 +37,13 @@ let newArray = array2.concat([6, 7, 8]);
 console.log("concat:", newArray); // [1, 2, 3, 4, 6, 7, 8]
 
 // copyWithin()
-newArray.copyWithin(2, 0, 2);
-console.log("copyWithin:", newArray); // [0, 2, 0, 2, 6, 7, 8, 9]
+// Copia una parte del array dentro de sí mismo, sobrescribiendo los valores existentes
+let tareas = ['💻 Programar', '📞 Llamar cliente', '📧 Responder correos', '📊 Revisar informes', '☕ Descanso'];
+
+// Copiar los dos primeros elementos en las dos últimas posiciones
+tareas.copyWithin(3, 0, 2); //Target index 3, start index 0, end index 2
+console.log(tareas); // ['💻 Programar', '📞 Llamar cliente', '📧 Responder correos', '💻 Programar', '📞 Llamar cliente']
+
 
 // every()
 let allAboveZero = newArray.every((num) => num >= 0);
