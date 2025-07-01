@@ -9,7 +9,7 @@ for (let i = 0; i < parrafos.length; i++) {
 // Objetivo: mostrar por consola cuántas etiquetas <img> hay.
 
 const imagenes = document.getElementsByTagName("img");
-console.log("Número de imágenes:", imagenes.length);
+console.log("Número de imágenes (con getElementsByTagName):", imagenes.length);
 
 // 🧪 Ejercicio 3: Cambiar el texto de todos los botones
 // Objetivo: cambiar el texto de cada <button> a "¡Clic aquí!"
