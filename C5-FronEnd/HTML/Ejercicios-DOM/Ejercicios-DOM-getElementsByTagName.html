@@ -16,10 +16,50 @@
     <button>Enviar</button>
     <button>Guardar</button>
     <button>Cancelar</button>
-    <p class="meloinvento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt veniam voluptatem magnam tempora quae iure ratione eligendi a debitis obcaecati, culpa soluta hic nostrum, ipsa vel. Velit, veritatis aperiam?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa eveniet dolore maiores, debitis doloribus quas quae eum nisi perferendis repudiandae aperiam, incidunt dolorem, labore laboriosam non necessitatibus atque. Delectus!</p>
-    <p class="meloinvento">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, magni nihil. Suscipit animi ipsa voluptates natus recusandae. Magnam nostrum error velit iure dolorum natus illo! Libero exercitationem officia qui quam?</p>
+    <p class="meloinvento">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+      deserunt veniam voluptatem magnam tempora quae iure ratione eligendi a
+      debitis obcaecati, culpa soluta hic nostrum, ipsa vel. Velit, veritatis
+      aperiam?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa
+      eveniet dolore maiores, debitis doloribus quas quae eum nisi perferendis
+      repudiandae aperiam, incidunt dolorem, labore laboriosam non
+      necessitatibus atque. Delectus!
+    </p>
+    <p class="meloinvento">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, magni
+      nihil. Suscipit animi ipsa voluptates natus recusandae. Magnam nostrum
+      error velit iure dolorum natus illo! Libero exercitationem officia qui
+      quam?
+    </p>
+
+    <p>Selecciona tu género:</p>
+    <label
+      ><input type="radio" name="genero" value="Masculino" />Masculino
+    </label>
+    <label><input type="radio" name="genero" value="Femenino" />Femenino</label>
+    <button onclick="mostrarGenero()">Mostrar</button>
+    <p id="resultado1"></p>
+
+    <p>Selecciona tus lenguajes favoritos:</p>
+    <label><input type="checkbox" name="lenguajes" value="JavaScript" />
+      JavaScript</label>
+    <label><input type="checkbox" name="lenguajes" value="Python" /> Python</label>
+    <label><input type="checkbox" name="lenguajes" value="Java" /> Java</label>
+    <button onclick="contarLenguajes()">Contar</button>
+    <p id="resultado2"></p>
+
+    <p>Notas del alumno:</p>
+    <input type="number" name="nota" value="7">
+    <input type="number" name="nota" value="8">
+    <input type="number" name="nota" value="6">
+    <button onclick="sumarNotas()">Sumar</button>
+    <p id="resultado3"></p>
+
     <!-- <script src="getElementsByTagName.js"></script> -->
-    <script src="querySelectorAll.js"></script>
+    <!-- <script src="querySelectorAll.js"></script> -->
+    <script src="getElementsByName.js"></script>
   </body>
 </html>
