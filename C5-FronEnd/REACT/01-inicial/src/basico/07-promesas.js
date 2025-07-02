@@ -1,4 +1,11 @@
-import { getHeroeById } from "./bases/08-imp-exp";
+// Concepto de promesas en JavaScript
+// Las promesas son objetos que representan la finalización (o el fracaso) de una operación asíncrona y su valor resultante.
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+import { getHeroeById } from "./05-import-export";
+
+// const promesa = new Promise();
+// Las promesas por naturaleza son asíncronas, por lo que se ejecutan en segundo plano y no bloquean el hilo principal de ejecución.
 
 // const promesa = new Promise( (resolve, reject) => {
 

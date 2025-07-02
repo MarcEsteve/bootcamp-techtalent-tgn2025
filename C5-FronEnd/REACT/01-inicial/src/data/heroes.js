@@ -1,5 +1,5 @@
 // Para poder usar este archivo, debes importarlo en otro archivo de JavaScript y aqui colocar "export" 
-export const heroes = [
+const heroes = [
     {
         id: 1,
         name: 'Batman',
@@ -27,6 +27,11 @@ export const heroes = [
     },
 ];
 
-export const owners = ['DC', 'Marvel'];
 
 export default heroes;
+export const owners = ['DC', 'Marvel'];
+
+// export {
+//     heroes as default,
+//     owners
+// }
