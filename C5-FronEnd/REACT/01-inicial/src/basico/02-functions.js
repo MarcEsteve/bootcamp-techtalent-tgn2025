@@ -24,21 +24,37 @@ const saludar3 = () => `Hola Mundo`;
 console.log( saludar2("Pedro","Jiménez") );
 console.log( saludar3("Andreu") );
 
-
+// Función que retorna un objeto
 const getUser = () => ({
-        uid: 'ABC123',
-        username: 'El_Papi1502'
+        uid: '01234',
+        username: 'marceg'
 });
 
+// console.log(getUser());
 
 const user = getUser();
 console.log(user);
 
-// Tarea
+// Tarea: transformar esta función a una función de flecha
+// y que retorne un objeto implícitamente:
+// function getUsuarioActivo( nombre ) {
+//     return {
+//         uid: '12345',
+//         username: nombre
+//     }
+// }
+
+
+
+
+
+
+
+
 const getUsuarioActivo = ( nombre ) =>({
-    uid: 'ABC567',
+    uid: '43210',
     username: nombre
 })
 
-const usuarioActivo = getUsuarioActivo('Fernando');
+const usuarioActivo = getUsuarioActivo('Marc');
 console.log( usuarioActivo );
