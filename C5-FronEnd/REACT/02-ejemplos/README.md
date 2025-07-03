@@ -68,3 +68,4 @@ cd bootcamp-techtalent-tgn2025
 npm install
 npm run dev
 ```
+3. Abre tu navegador en http://localhost:5173
