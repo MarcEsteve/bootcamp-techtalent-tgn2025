@@ -59,6 +59,12 @@ const [nombre, lanzarTelaraña] = useSpiderState('Peter Parker');
 ## 🧪 Cómo probar
 1. Clona el proyecto:
 ```bash
-git clone [https://github.com/MarcEsteve/bootcamp-techtalent-tgn2025]
+git clone https://github.com/MarcEsteve/bootcamp-techtalent-tgn2025
 cd bootcamp-techtalent-tgn2025
+```
+
+2. Instala dependencias y ejecuta:
+```bash
+npm install
+npm run dev
 ```
