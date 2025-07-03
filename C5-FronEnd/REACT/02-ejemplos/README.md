@@ -1,4 +1,4 @@
-# 🕸️ React + JavaScript Basics para el Bootcamp Techtalent Tarragona 2025
+# 🕸️ JavaScript Basics para el Bootcamp Techtalent Tarragona 2025
 
 Este repositorio contiene una serie de ejemplos introductorios para practicar conceptos esenciales de JavaScript utilizados en React.
 
