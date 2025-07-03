@@ -11,7 +11,7 @@ const saludar1 = ( nombre ) => {
 }
 
 // Función de flecha simplificada
-const saludar2 = ( nombre, apellido ) => `Hola, ${ nombre, apellido }`;
+const saludar2 = ( nombre, apellido ) => `Hola, ${nombre} ${apellido }`;
 
 // Función de flecha sin parámetros con retorno implícito
 const saludar3 = () => `Hola Mundo`;
@@ -45,16 +45,13 @@ console.log(user);
 // }
 
 
+const getUsuarioActivo = (nombre) => ({
+        uid: '12345',
+        username: nombre
+    });
 
 
-
-
-
-
-const getUsuarioActivo = ( nombre ) =>({
-    uid: '43210',
-    username: nombre
-})
 
 const usuarioActivo = getUsuarioActivo('Marc');
 console.log( usuarioActivo );
+
