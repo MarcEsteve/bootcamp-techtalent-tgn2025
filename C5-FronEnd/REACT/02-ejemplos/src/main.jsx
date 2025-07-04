@@ -1,3 +1,4 @@
+
 console.log("Hola mundo");
 // Si editas, guardas y recargas, verás el cambio en la consola 
 // Gracias al Live Reload Server de Vite se hace automáticamente
@@ -154,3 +155,5 @@ const [ spiderNombre, lanzarTelaraña ] = useSpiderState('Peter Parker');
 
 console.log(spiderNombre);       // Peter Parker
 lanzarTelaraña();                // Lanzando telaraña desde Peter Parker
+
+
