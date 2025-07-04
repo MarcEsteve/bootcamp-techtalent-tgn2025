@@ -1,3 +1,4 @@
+import heroes, { owners } from "./data/heroes";
 
 console.log("Hola mundo");
 // Si editas, guardas y recargas, verás el cambio en la consola 
@@ -156,4 +157,38 @@ const [ spiderNombre, lanzarTelaraña ] = useSpiderState('Peter Parker');
 console.log(spiderNombre);       // Peter Parker
 lanzarTelaraña();                // Lanzando telaraña desde Peter Parker
 
+//Importaciones y exportaciones en JavaScript
 
+console.log(heroes);
+console.log(owners);
+
+
+const getHeroeById = (identi) => heroes.find((heroe) => heroe.id === identi);
+
+console.log( getHeroeById(2) );
+
+// filter()
+const frutas = ["plátano", "fresa", "cereza", "kiwi"];
+const result = frutas.filter((textoFruta) => textoFruta.length >= 6);
+console.log(result);
+
+// find? solo devuelve 1, filter todos
+const getHeroesByOwner = (propietario) =>
+  heroes.filter((heroe) => heroe.owner === propietario);
+
+console.log( getHeroesByOwner('Marvel') );
+
+//Condicional ternario
+
+const activo = false;
+let mensaje = '';
+// (la condición) ? (si es true) : (si es false)
+// const mensaje = ( activo ) ? 'Activo' : 'Inactivo';
+mensaje = activo && "Activo";
+console.log(mensaje);
+
+console.log("Esto es un log");
+console.info("Esto es info");
+console.warn("Cuidado con esto");
+console.error("Ocurrió un error");
+console.table([{ nombre: "Marc", edad: 39 }, { nombre: "Rut", edad: 2 }]);
