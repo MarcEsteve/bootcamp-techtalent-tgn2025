@@ -192,3 +192,41 @@ console.info("Esto es info");
 console.warn("Cuidado con esto");
 console.error("Ocurrió un error");
 console.table([{ nombre: "Marc", edad: 39 }, { nombre: "Rut", edad: 2 }]);
+
+//Promesas en JavaScript
+// const promesa = new Promise((resolve, reject) => {
+
+//   setTimeout(() => {
+//     resolve();
+//   },1000)
+
+// });
+
+// promesa.then( () => {
+//   console.log("Se ejecutó la promesa");
+// });
+
+// Ejemplo de una promesa que se resuelve o se rechaza después de 2 segundos
+const exito = true; // ✅ Pon esto en true o false para probar resolve o reject
+
+const promise = new Promise((resolutionFunc, rejectionFunc) => {
+  setTimeout(() => {
+    if (exito) {
+      resolutionFunc(777); // Resuelve la promesa con un valor
+    } else {
+      rejectionFunc("Algo salió mal"); // Rechaza la promesa con un error
+    }
+  }, 2000); // Espera 2 segundos
+});
+
+//Anidar funciones  promesa.then().catch()...
+
+promise
+  .then((val) => {
+    console.log("✅ La promesa se resolvió con:", val);
+  })
+  .catch((err) => {
+    console.error("❌ La promesa fue rechazada con error:", err);
+  });
+
+console.log("⏳ Operación en curso...");
