@@ -1,6 +1,8 @@
 // https://developer.mozilla.org/es/docs/Web/API/Fetch_API
 // https://developers.giphy.com/dashboard/
 
+//Create account > Create an API Key
+
 const apiKey = "D9n0H1elB7UefwYGtEfLMTmI2p2Tk2xf"; // Reemplaza con tu propia API key de Giphy
 
 // Docs > GIPHY API > GIF & Sticker Endpoints > Random Endpoint
