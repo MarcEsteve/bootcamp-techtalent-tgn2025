@@ -1,4 +1,5 @@
 import heroes, { owners } from "./data/heroes";
+// import { getHeroeById } from "./05-import-export";
 
 console.log("Hola mundo");
 // Si editas, guardas y recargas, verás el cambio en la consola 
@@ -230,4 +231,21 @@ promise
   });
 
 console.log("⏳ Operación en curso...");
+
+//Utilizamos una promesa para capturar las id de héroes asíncronamente
+
+const promesaHeroe = new Promise( (resolve, reject) => {
+
+    setTimeout( () =>  {
+        const p1 = getHeroeById(2);
+        resolve( p1 );
+        // reject( 'No se pudo encontrar el héroe' );
+    }, 2000 )
+
+}); 
+
+promesaHeroe.then( (heroe) => {
+    console.log('heroe', heroe)
+})
+.catch( err => console.warn( err ) );
 
