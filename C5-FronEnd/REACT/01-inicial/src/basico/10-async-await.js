@@ -1,4 +1,4 @@
-// const getImagenPromesa = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
+// const getImagenPromesa = () => new Promise( resolve => resolve('https://cualquierdominio.com') )
 // getImagenPromesa().then( console.log );
 
 const getImagen = async () => {
