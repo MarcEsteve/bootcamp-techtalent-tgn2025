@@ -35,6 +35,7 @@ export const SegundoComponente = () => {
 //     return (
 //       <>
 //         <div>Segundo componente</div>
+//          <p>{ 1+2 }</p>
 //         <p>{ nombre }</p>
 //         <p>{ nuevoMensaje.mensaje }</p>
 //         <code>{ JSON.stringify(nuevoMensaje) }</code>
