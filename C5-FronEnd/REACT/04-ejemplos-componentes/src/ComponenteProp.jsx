@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+// npm install prop-types
+
 //Properties "props"
 
 // const ComponenteProp = (props) =>{
@@ -40,5 +43,9 @@ const ComponenteProp = ({title, subtitulo}) =>{
         </>
     )
 };
+
+ComponenteProp.propTypes = {
+    subtitulo: PropTypes.string.isRequired 
+}
 
 export default ComponenteProp;
