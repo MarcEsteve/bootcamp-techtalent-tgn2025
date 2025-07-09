@@ -2,13 +2,13 @@ import './Perfil.css';
 
 const shakira = {
   name: 'Shakira',
-  imageUrl: 'https://s2.abcstatics.com/abc/www/multimedia/deportes/2025/04/11/topuria-ilia-ufc-RhZxCIqvnRbFGBrotvE6ylK-1200x840@diario_abc.PNG',
+  imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2902.jpg',
   imageSize: 90,
 };
 
 const topuria = {
   name: 'Topuria',
-  imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2902.jpg',
+  imageUrl: ' https://s2.abcstatics.com/abc/www/multimedia/deportes/2025/04/11/topuria-ilia-ufc-RhZxCIqvnRbFGBrotvE6ylK-1200x840@diario_abc.PNG',
   imageSize: 90,
 };
 
