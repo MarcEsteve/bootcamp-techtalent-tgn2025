@@ -10,7 +10,7 @@ const nuevoMensaje = {
   mensaje: "Hola Mundo",
   nombre: "Marc",
 };
-const boleano = false;
+const boleano = true;
 
 let content;
 if (boleano) {
@@ -35,6 +35,7 @@ const SegundoComponente = () => {
       <MiBoton />
       <button>Otro botón</button>
       <div>{content}</div>
+      <div>{boleano ? <Topuria /> : <Shakira />}</div>
       {/* <Perfil /> */}
       <p>{nombre}</p>
       {/* <p>{nuevoMensaje}</p> */}
