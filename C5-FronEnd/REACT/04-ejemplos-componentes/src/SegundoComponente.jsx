@@ -1,6 +1,7 @@
 // import { Fragment } from "react";
 import Mar from './assets/mar1.avif';
 import MiBoton from './Button';
+import Perfil from './Perfil';
 
 const nombre = 'Marc';
 const nuevoMensaje= {
@@ -21,6 +22,7 @@ const SegundoComponente = () => {
         <p>{ 1+2 }</p>
         <MiBoton />
         <button>Otro botón</button>
+        <Perfil />
         <p>{ nombre }</p>
         {/* <p>{nuevoMensaje}</p> */}
         <p>{ nuevoMensaje.mensaje }</p>
