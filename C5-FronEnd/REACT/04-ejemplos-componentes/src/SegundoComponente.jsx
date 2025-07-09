@@ -12,12 +12,12 @@ const nuevoMensaje = {
 };
 const boleano = true;
 
-let content;
-if (boleano) {
-  content = <Shakira />;
-} else {
-  content = <Topuria />;
-}
+// let content;
+// if (boleano) {
+//   content = <Shakira />;
+// } else {
+//   content = <Topuria />;
+// }
 
 const SegundoComponente = () => {
   // const nombre = 'Marc';
@@ -34,7 +34,7 @@ const SegundoComponente = () => {
       <p>{1 + 2}</p>
       <MiBoton />
       <button>Otro botón</button>
-      <div>{content}</div>
+      {/* <div>{content}</div> */}
       <div>{boleano ? <Topuria /> : <Shakira />}</div>
       {/* <Perfil /> */}
       <p>{nombre}</p>
