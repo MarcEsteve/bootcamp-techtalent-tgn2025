@@ -6,6 +6,7 @@ function MouseExample() {
     >
       <button
         onClick={e => console.log('onClick (first button)')}
+        // onClick={e => console.log(e)}
         onMouseDown={e => console.log('onMouseDown (first button)')}
         onMouseEnter={e => console.log('onMouseEnter (first button)')}
         onMouseLeave={e => console.log('onMouseLeave (first button)')}
