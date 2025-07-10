@@ -45,7 +45,11 @@ const ComponenteProp = ({title, subtitulo}) =>{
 };
 
 ComponenteProp.propTypes = {
-    subtitulo: PropTypes.string.isRequired 
-}
+    title: PropTypes.string.isRequired 
+};
+
+ComponenteProp.defaultProps = {
+    title: "No hay título"
+};
 
 export default ComponenteProp;
