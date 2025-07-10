@@ -9,7 +9,7 @@ function ShoppingList() {
     <li
       key={product.id}
       style={{
-        color: product.isFruit ? 'magenta' : 'darkgreen'
+        color: product.isFruit ? 'YellowGreen' : 'Peru'
       }}
     >
       {product.title}
