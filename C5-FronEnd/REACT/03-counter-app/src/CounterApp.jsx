@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 export const CounterApp = ({ value }) => {
     
+    //Inicializamos el valor de "counter" con la prop "value"
     const [ counter, setCounter ] = useState( value );
 
     const handleAdd = () => { 
@@ -22,7 +23,7 @@ export const CounterApp = ({ value }) => {
 
             <button onClick={ handleAdd }> +1 </button>
             <button onClick={ handleSubstract }> -1 </button>
-            <button aria-label="btn-reset" onClick={ handleReset }> Reset </button>
+            <button onClick={ handleReset } aria-label="btn-reset" > Reset </button>
         </>
     );
 }

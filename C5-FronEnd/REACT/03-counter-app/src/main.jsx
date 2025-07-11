@@ -17,6 +17,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
     <SegundoComponente />
-    <CounterApp value={ 11 } />
+    <CounterApp value = { 11 } />
   </React.StrictMode>
 );
