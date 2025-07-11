@@ -15,7 +15,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <App/> */}
     {/* <SegundoComponente/> */}
-    {/* <ComponenteProp title="Hola soy Marc" subtitulo={123} /> */}
+    <ComponenteProp title="Hola soy Marc" subtitulo={123} />
+    {/* <ComponenteProp /> */}
     {/* <ShoppingList /> */}
     {/* <MouseExample />
     <PointerExample />

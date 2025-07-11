@@ -37,15 +37,17 @@ const ComponenteProp = ({title, subtitulo}) =>{
 
     return (
         <>
-        <h1>{title}</h1>
-        <p>texto</p>
-        <p>{subtitulo +1}</p>
+            <h1>{title}</h1>
+            <p>texto</p>
+            <p>{subtitulo +1}</p>
         </>
     )
 };
 
 ComponenteProp.propTypes = {
     title: PropTypes.string.isRequired 
+    //  subtitulo: PropTypes.number.isRequired 
+    //  Acciones para manejar errores de tipo
 };
 
 ComponenteProp.defaultProps = {
