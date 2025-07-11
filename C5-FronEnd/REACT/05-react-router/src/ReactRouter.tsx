@@ -3,9 +3,10 @@ import {
   Route
 } from 'react-router-dom';
 import Layout from './Layout';
-import Home from './Home';
-import About from './About';
+import Inicio from './Inicio';
+import Nosotros from './Nosotros';
 import NoMatch from './NoMatch';
+import Servicios from './Servicios';
 
 
 //npm install react-router-dom
@@ -24,8 +25,9 @@ function ReactRouter() {
 
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route index element={<Inicio />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="servicios" element={<Servicios />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

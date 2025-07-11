@@ -1,0 +1,63 @@
+/* ======= Estilo general ======= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ======= Contenedor de navegación ======= */
+nav {
+  background-color: #0d47a1;           /* azul oscuro */
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset de la lista */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;                       /* menú horizontal */
+  gap: 1.5rem;                         /* espacio entre enlaces */
+}
+
+/* ======= Enlaces (CustomLink) ======= */
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.2rem 0;
+  transition: color 0.25s ease;
+}
+
+/* Subrayado animado al hacer hover o si el enlace está activo */
+nav li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  width: 0%;
+  background-color: #ffeb3b;           /* amarillo */
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+nav li a:hover,
+nav li a:focus {
+  color: #ffeb3b;                      /* amarillo */
+}
+
+nav li a:hover::after,
+nav li a:focus::after {
+  width: 100%;
+}
+
+/* (opcional) Marca visual si tu CustomLink añade la clase "active" */
+nav li a.active {
+  color: #ffeb3b;
+}
+
+nav li a.active::after {
+  width: 100%;
+}

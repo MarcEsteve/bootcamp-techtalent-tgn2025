@@ -5,9 +5,10 @@ import {
 function NoMatch() {
   return (
     <div>
-      <h1>Nothing to see here!</h1>
+      <h1>Página no encontrada</h1>
+      <p>Error 404</p>
       <p>
-        <Link to="/">Go to the home page</Link>
+        <Link to="/">Volver a Inicio</Link>
       </p>
     </div>
   );
