@@ -17,8 +17,8 @@ mensaje = 'Hola Mundo!';
 let resultado: number;
 resultado = 12.45;
 
-// let logsCounter: bigint; // Disponible para ES2020 en adelante
-// logsCounter = 79874676384638768436874368347n;
+let logsCounter: bigint; // Disponible para ES2020 en adelante
+logsCounter = 79874676384638768436874368347n;
 
 // boolean
 
@@ -33,7 +33,7 @@ mayorEdad = false;
 // y podemos declarar o no el tipo
 
 let puntuacion = 12; // No es necesario el tipo number porque lo obtiene por inferencia
-// puntuacion = '12'; error
+// puntuacion = '12'; // error
 
 // any (romper la inferencia)
 
@@ -53,13 +53,13 @@ frutas = ['peras','manzanas','naranjas'];
 // Tipado de funciones 
 
 function suma(operando1: number, operando2: number): string {
-    return 'La suma es ' + operando1 + operando2;
+    return 'La suma es ' + (operando1 + operando2);
 }
 
-suma(2,3);
+suma(2,3); // "La suma es 5"
 
 function setMensaje(mensaje: string): void { // Dispone del tipo void para funciones sin retorno
-    console.log(mensaje);
+    console.log(mensaje); //return mensaje; //No se puede tener return
 }
 
 // Parámetros opcionales
@@ -68,8 +68,8 @@ function multiplicacion(operando1: number, operando2: number, mensaje?: string):
     return mensaje ? mensaje + operando1 * operando2 : 'El resultado es ' + operando1 * operando2;
 }
 
-const resultado1 = multiplicacion(10, 5);
-const resultado2 = multiplicacion(2, 4, 'Solución: ');
+const resultado1 = multiplicacion(10, 5); // El resultado es 50
+const resultado2 = multiplicacion(2, 4, 'Solución: '); // Solución: 8
 
 // Tipos genéricos (definen en tiempo de invocación)
 
@@ -93,3 +93,6 @@ referencia = '0000234';
 type razasPerroAceptadas = 'Pastor Alemán' | 'Pastor Belga' | 'Mastín';
 
 let toby: razasPerroAceptadas = 'Mastín';
+// toby = "Boxer";
+// toby = "Beagle";
+toby = "Pastor Belga";
