@@ -1,5 +1,3 @@
-let mensaje: string; // Estableciendo tipado fuerte a la variable como string
-
+// let mensaje: string; 
 mensaje = 'Hola Mundo!';
-
 console.log(mensaje);
