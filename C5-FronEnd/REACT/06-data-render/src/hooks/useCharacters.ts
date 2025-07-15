@@ -16,7 +16,7 @@ export const useCharacters = () => {
     fetch('https://rickandmortyapi.com/api/character')
       .then((r) => r.json())
       .then((data) => {
-        setCharacters(data.results.slice(0, 9)); // ⇢ solo 9
+        setCharacters(data.results.slice(0, 21)); // ⇢ solo 9
         setLoading(false);
       })
       .catch(() => setLoading(false));
