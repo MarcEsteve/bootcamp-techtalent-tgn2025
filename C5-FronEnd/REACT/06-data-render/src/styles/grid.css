@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fuerza 3 columnas fijas */
+  gap: 1.5rem;
+
+  justify-content:center; /* Distribuye espacio igual entre columnas */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
