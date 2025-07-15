@@ -18,14 +18,14 @@ function Users() {
   /* --- Render --- */
   if (loading) return <p>Cargando…</p>;      
 
-  return (
-    <ul>
-      {users.map(user => (                    // 
-        <li key={user.id}>
-          {user.name} — {user.email}
-        </li>
-      ))}
-    </ul>
+  return (users
+    // <ul>
+    //   {users.map(user => (  
+    //     <li key={user.id}>
+    //       {user.name} — {user.username} — {user.email}  
+    //     </li>
+    //   ))}
+    // </ul>
   );
 }
 
