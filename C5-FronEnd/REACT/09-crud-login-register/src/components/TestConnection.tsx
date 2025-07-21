@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './TestConnection.css';
-
+import "./TestConnection.css";
 
 const BASE_URL =
   "https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app";
@@ -41,6 +40,13 @@ const TestConnection: React.FC = () => {
     }
   };
 
+  // Lectura de usuarios en BBDD
+  const getTableHeaders = () => {
+    if (!users) return [];
+    const firstUserKey = Object.keys(users)[0];
+    return Object.keys(users[firstUserKey]);
+  };
+
   //Eliminar DELETE en BBDD
   const handleDelete = async (userId: string) => {
     try {
@@ -75,13 +81,6 @@ const TestConnection: React.FC = () => {
     } catch (err: any) {
       alert("❌ No se pudo crear el usuario");
     }
-  };
-
-  // Lectura de usuarios en BBDD
-  const getTableHeaders = () => {
-    if (!users) return [];
-    const firstUserKey = Object.keys(users)[0];
-    return Object.keys(users[firstUserKey]);
   };
 
   //Edición UPDATE
