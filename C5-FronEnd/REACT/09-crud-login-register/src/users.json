@@ -1,0 +1,16 @@
+{
+  "users": {
+    "user1": {
+      "name": "Alice",
+      "email": "alice@example.com",
+      "profile": "Estudiante",
+      "password": "alice123"
+    },
+    "user2": {
+      "name": "Bob",
+      "email": "bob@example.com",
+      "profile": "Docente",
+      "password": "bob123"
+    }
+  }
+}

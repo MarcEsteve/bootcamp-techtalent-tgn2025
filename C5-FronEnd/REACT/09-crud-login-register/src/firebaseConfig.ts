@@ -5,13 +5,13 @@ import { getDatabase } from 'firebase/database';
 
 // TODO: Reemplaza estos valores por la configuración real de tu proyecto Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  databaseURL: "TU_DATABASE_URL",  // URL de la base de datos en tiempo real
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID"
+  apiKey: "AIzaSyDJA-U9rYcVRHiF0wutk6U2k9Pwnvrdj2E",
+  authDomain: "bootcamp-techtalent-2025.firebaseapp.com",
+  databaseURL: "https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "bootcamp-techtalent-2025",
+  storageBucket: "bootcamp-techtalent-2025.firebasestorage.app",
+  messagingSenderId: "103520873502",
+  appId: "1:103520873502:web:bad3267fb103ae83f8920f"
 };
 
 // Inicializa la app de Firebase
