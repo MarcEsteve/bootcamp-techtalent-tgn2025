@@ -8,22 +8,33 @@ const TestConnection: React.FC = () => {
     'https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app';
 
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const res = await fetch(`${BASE_URL}/users.json`);
-        if (!res.ok) {
-          throw new Error(`Error HTTP: ${res.status}`);
-        }
-        const data = await res.json();
-        setUsers(data);
-      } catch (err: any) {
-        setError(err.message);
-        console.error('Error al conectar con Firebase:', err);
-      }
-    };
-
     fetchUsers();
   }, []);
+
+  const fetchUsers = async () => {
+    try {
+      const res = await fetch(`${BASE_URL}/users.json`);
+      if (!res.ok) throw new Error(`Error HTTP: ${res.status}`);
+      const data = await res.json();
+      setUsers(data);
+    } catch (err: any) {
+      setError(err.message);
+    }
+  };
+
+  const handleDelete = async (userId: string) => {
+    try {
+      const res = await fetch(`${BASE_URL}/users/${userId}.json`, {
+        method: 'DELETE',
+      });
+      if (!res.ok) throw new Error(`Error al borrar: ${res.status}`);
+      // Recarga los usuarios tras borrar
+      fetchUsers();
+    } catch (err: any) {
+      console.error('Error al borrar usuario:', err.message);
+      alert('❌ No se pudo borrar el usuario');
+    }
+  };
 
   const getTableHeaders = () => {
     if (!users) return [];
@@ -42,6 +53,7 @@ const TestConnection: React.FC = () => {
         <table border={1} cellPadding={10} style={{ borderCollapse: 'collapse', width: '100%' }}>
           <thead style={{ backgroundColor: '#f0f0f0' }}>
             <tr>
+              <th>🗑️</th>
               <th>ID</th>
               {getTableHeaders().map((key) => (
                 <th key={key}>{key}</th>
@@ -51,6 +63,21 @@ const TestConnection: React.FC = () => {
           <tbody>
             {Object.entries(users).map(([id, user]) => (
               <tr key={id}>
+                <td>
+                  <button
+                    onClick={() => handleDelete(id)}
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: 'red',
+                      border: 'none',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                    }}
+                    title="Borrar usuario"
+                  >
+                    ❌
+                  </button>
+                </td>
                 <td>{id}</td>
                 {getTableHeaders().map((key) => (
                   <td key={key}>{user[key]}</td>
