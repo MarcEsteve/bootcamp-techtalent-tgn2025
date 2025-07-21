@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import './TestConnection.css';
+
 
 const BASE_URL =
   "https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app";
@@ -186,7 +188,7 @@ const TestConnection: React.FC = () => {
         >
           <thead style={{ backgroundColor: "#eee" }}>
             <tr>
-              <th>🗑️</th>
+              <th>ESBORRAR/EDICIÓ</th>
               <th>ID</th>
               {getTableHeaders().map((key) => (
                 <th key={key}>{key}</th>

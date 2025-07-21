@@ -1,6 +1,5 @@
 import React, { createContext, useState, type ReactNode } from "react";
 import { type User } from "../models/User";
-
 // Definimos el tipo de datos que manejaremos en el contexto
 interface AuthContextType {
   user: User | null;
