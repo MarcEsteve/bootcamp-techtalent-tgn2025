@@ -1,11 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
-const TestConnection: React.FC = () => {
-  const [users, setUsers] = useState<Record<string, any> | null>(null);
-  const [error, setError] = useState<string | null>(null);
+const BASE_URL =
+  'https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app';
 
-  const BASE_URL =
-    'https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app';
+type User = {
+  name: string;
+  email: string;
+  password: string;
+  profile: string;
+};
+
+const TestConnection: React.FC = () => {
+  const [users, setUsers] = useState<Record<string, User> | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [showForm, setShowForm] = useState(false);
+  const [newUser, setNewUser] = useState<User>({
+    name: '',
+    email: '',
+    password: '',
+    profile: '',
+  });
 
   useEffect(() => {
     fetchUsers();
@@ -16,7 +30,7 @@ const TestConnection: React.FC = () => {
       const res = await fetch(`${BASE_URL}/users.json`);
       if (!res.ok) throw new Error(`Error HTTP: ${res.status}`);
       const data = await res.json();
-      setUsers(data);
+      setUsers(data || {});
     } catch (err: any) {
       setError(err.message);
     }
@@ -28,11 +42,31 @@ const TestConnection: React.FC = () => {
         method: 'DELETE',
       });
       if (!res.ok) throw new Error(`Error al borrar: ${res.status}`);
-      // Recarga los usuarios tras borrar
       fetchUsers();
     } catch (err: any) {
-      console.error('Error al borrar usuario:', err.message);
       alert('❌ No se pudo borrar el usuario');
+    }
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setNewUser({ ...newUser, [e.target.name]: e.target.value });
+  };
+
+  const handleAddUser = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const newId = `user${Object.keys(users || {}).length + 1}`;
+      const res = await fetch(`${BASE_URL}/users/${newId}.json`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newUser),
+      });
+      if (!res.ok) throw new Error(`Error al crear: ${res.status}`);
+      setNewUser({ name: '', email: '', password: '', profile: '' });
+      setShowForm(false);
+      fetchUsers();
+    } catch (err: any) {
+      alert('❌ No se pudo crear el usuario');
     }
   };
 
@@ -44,14 +78,77 @@ const TestConnection: React.FC = () => {
 
   return (
     <div style={{ padding: '1rem' }}>
-      <h2>📊 Tabla de Usuarios</h2>
+      <h2>👥 Usuarios registrados</h2>
+      <button
+        onClick={() => setShowForm(!showForm)}
+        style={{
+          padding: '0.5rem 1rem',
+          marginBottom: '1rem',
+          backgroundColor: '#4CAF50',
+          color: '#fff',
+          border: 'none',
+          cursor: 'pointer',
+        }}
+      >
+        {showForm ? '⬅ Volver' : '➕ Añadir nuevo usuario'}
+      </button>
+
+      {showForm && (
+        <form onSubmit={handleAddUser} style={{ marginBottom: '2rem' }}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            value={newUser.name}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo"
+            value={newUser.email}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="profile"
+            placeholder="Perfil"
+            value={newUser.profile}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            value={newUser.password}
+            onChange={handleInputChange}
+            required
+          />
+          <button
+            type="submit"
+            style={{
+              backgroundColor: '#2196F3',
+              color: '#fff',
+              border: 'none',
+              padding: '0.5rem 1rem',
+              marginLeft: '0.5rem',
+              cursor: 'pointer',
+            }}
+          >
+            Guardar usuario
+          </button>
+        </form>
+      )}
+
       {error && <p style={{ color: 'red' }}>❌ Error: {error}</p>}
+      {!users && <p>🔄 Cargando usuarios...</p>}
 
-      {!users && !error && <p>🔄 Cargando usuarios...</p>}
-
-      {users && (
+      {users && !showForm && (
         <table border={1} cellPadding={10} style={{ borderCollapse: 'collapse', width: '100%' }}>
-          <thead style={{ backgroundColor: '#f0f0f0' }}>
+          <thead style={{ backgroundColor: '#eee' }}>
             <tr>
               <th>🗑️</th>
               <th>ID</th>
@@ -73,14 +170,13 @@ const TestConnection: React.FC = () => {
                       fontWeight: 'bold',
                       cursor: 'pointer',
                     }}
-                    title="Borrar usuario"
                   >
                     ❌
                   </button>
                 </td>
                 <td>{id}</td>
                 {getTableHeaders().map((key) => (
-                  <td key={key}>{user[key]}</td>
+                  <td key={key}>{user[key as keyof User]}</td>
                 ))}
               </tr>
             ))}
