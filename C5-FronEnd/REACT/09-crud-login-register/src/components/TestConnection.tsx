@@ -29,6 +29,7 @@ const TestConnection: React.FC = () => {
     fetchUsers();
   }, []);
 
+  //Captura los datos de Usuarios users.json
   const fetchUsers = async () => {
     try {
       const res = await fetch(`${BASE_URL}/users.json`);
@@ -40,6 +41,7 @@ const TestConnection: React.FC = () => {
     }
   };
 
+  //Eliminar DELETE en BBDD
   const handleDelete = async (userId: string) => {
     try {
       const res = await fetch(`${BASE_URL}/users/${userId}.json`, {
@@ -56,6 +58,7 @@ const TestConnection: React.FC = () => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
   };
 
+  //Añadir o ingresar nuevo usuario en BBDD
   const handleAddUser = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -74,19 +77,19 @@ const TestConnection: React.FC = () => {
     }
   };
 
+  // Lectura de usuarios en BBDD
   const getTableHeaders = () => {
     if (!users) return [];
     const firstUserKey = Object.keys(users)[0];
     return Object.keys(users[firstUserKey]);
   };
 
-  //Edición
+  //Edición UPDATE
   const handleEditChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEditedUser({ ...editedUser, [e.target.name]: e.target.value });
   };
 
   //Guardar cambios
-
   const handleSaveEdit = async (userId: string) => {
     try {
       const res = await fetch(`${BASE_URL}/users/${userId}.json`, {
@@ -104,7 +107,6 @@ const TestConnection: React.FC = () => {
   };
 
   //Cancelar edición
-
   const cancelEdit = () => {
     setEditingUserId(null);
     setEditedUser({});

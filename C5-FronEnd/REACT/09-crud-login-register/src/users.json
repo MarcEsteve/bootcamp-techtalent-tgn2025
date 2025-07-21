@@ -1,16 +1,14 @@
 {
-  "users": {
-    "user1": {
-      "name": "Alice",
-      "email": "alice@example.com",
-      "profile": "Estudiante",
-      "password": "alice123"
-    },
-    "user2": {
-      "name": "Bob",
-      "email": "bob@example.com",
-      "profile": "Docente",
-      "password": "bob123"
-    }
+  "user1": {
+    "email": "marc@example.com",
+    "name": "Marc",
+    "password": "marcksdajfndsakfn123",
+    "profile": "Estudiante"
+  },
+  "user2": {
+    "email": "pepito@example.com",
+    "name": "Bob",
+    "password": "bob123",
+    "profile": "Docente"
   }
 }
