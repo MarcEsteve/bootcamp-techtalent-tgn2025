@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const TestConnection: React.FC = () => {
-  const [users, setUsers] = useState<any>(null);
+  const [users, setUsers] = useState<Record<string, any> | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const BASE_URL =
@@ -25,21 +25,40 @@ const TestConnection: React.FC = () => {
     fetchUsers();
   }, []);
 
+  const getTableHeaders = () => {
+    if (!users) return [];
+    const firstUserKey = Object.keys(users)[0];
+    return Object.keys(users[firstUserKey]);
+  };
+
   return (
-    <div>
-      <h2>📡 Usuarios en Firebase</h2>
+    <div style={{ padding: '1rem' }}>
+      <h2>📊 Tabla de Usuarios</h2>
       {error && <p style={{ color: 'red' }}>❌ Error: {error}</p>}
 
-      {users ? (
-        <ul>
-          {Object.entries(users).map(([id, user]: [string, any]) => (
-            <li key={id}>
-              <strong>{user.nombre}</strong> — {user.email}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        !error && <p>🔄 Cargando usuarios...</p>
+      {!users && !error && <p>🔄 Cargando usuarios...</p>}
+
+      {users && (
+        <table border={1} cellPadding={10} style={{ borderCollapse: 'collapse', width: '100%' }}>
+          <thead style={{ backgroundColor: '#f0f0f0' }}>
+            <tr>
+              <th>ID</th>
+              {getTableHeaders().map((key) => (
+                <th key={key}>{key}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(users).map(([id, user]) => (
+              <tr key={id}>
+                <td>{id}</td>
+                {getTableHeaders().map((key) => (
+                  <td key={key}>{user[key]}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       )}
     </div>
   );

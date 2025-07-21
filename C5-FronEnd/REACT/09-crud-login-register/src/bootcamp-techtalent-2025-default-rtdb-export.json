@@ -1,0 +1,22 @@
+{
+  "users": {
+    "user1": {
+      "email": "pepito@example.com",
+      "name": "Pepito",
+      "password": "pepito123",
+      "profile": "Estudiante"
+    },
+    "user2": {
+      "email": "marc@example.com",
+      "name": "Marc",
+      "password": "marc123",
+      "profile": "Docente"
+    },
+    "user3": {
+      "email": "prova@example.com",
+      "name": "Prova3",
+      "password": "prova123",
+      "profile": "Estudiante"
+    }
+  }
+}
