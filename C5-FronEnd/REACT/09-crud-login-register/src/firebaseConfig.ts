@@ -5,7 +5,7 @@ import { getDatabase } from 'firebase/database';
 
 // TODO: Reemplaza estos valores por la configuración real de tu proyecto Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDJA-U9rYcVRHiF0wutk6U2k9Pwnvrdj2E",
+  apiKey: "aquilaapidegooglefirebase",
   authDomain: "bootcamp-techtalent-2025.firebaseapp.com",
   databaseURL: "https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "bootcamp-techtalent-2025",
