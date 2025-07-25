@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Auth.css';
+import '../styles/Login.css';
 
 interface Redactor {
   username: string;

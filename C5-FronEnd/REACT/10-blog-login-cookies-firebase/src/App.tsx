@@ -1,37 +1,29 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Cookies from 'js-cookie';
-
+import { Routes, Route } from 'react-router-dom';
 import Blog from './pages/Blog';
-import Login from './components/Login';
-import Register from './components/Register';
 import NavBar from './components/NavBar';
-
-interface User {
-  name: string;
-  email: string;
-}
+import PrivateRoute from './components/PrivateRoute';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import CreatePost from './pages/CreatePost';
 
 function App() {
-  const [user, setUser] = useState<User | null>(null);
-
-  // Cargar sesión desde cookie al inicio
-  useEffect(() => {
-    const userCookie = Cookies.get('loggedUser');
-    if (userCookie) {
-      setUser(JSON.parse(userCookie));
-    }
-  }, []);
-
   return (
-    <Router>
-      <NavBar user={user} setUser={setUser} />
+    <>
+      <NavBar />
       <Routes>
         <Route path="/" element={<Blog />} />
-        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route
+          path="/nuevo"
+          element={
+            <PrivateRoute>
+              <CreatePost />
+            </PrivateRoute>
+          }
+        />
       </Routes>
-    </Router>
+    </>
   );
 }
 
