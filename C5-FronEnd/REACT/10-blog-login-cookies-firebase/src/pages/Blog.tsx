@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { usePosts } from "../hooks/usePosts";
 import BlogPostCard from "../components/BlogPostCard";
 
-const POSTS_PER_PAGE = 5;
+const POSTS_PER_PAGE = 2;
 
 const Blog = () => {
   const { posts, loading } = usePosts();
