@@ -1,0 +1,46 @@
+{
+  "posts": {
+    "post1": {
+      "title": "Introducción a React con TypeScript",
+      "content": "React es una librería de JavaScript para construir interfaces de usuario. Combinado con TypeScript nos da seguridad de tipos y una mejor experiencia de desarrollo.",
+      "category": "Frontend",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-techtalent-fullstack-web-developers-tarragona-2025.JPG?alt=media&token=77927f91-e4cd-4317-b2ba-eb70b5ee00d0",
+      "date": "2025-07-20"
+    },
+    "post2": {
+      "title": "Cómo conectar Firebase con tu app",
+      "content": "Firebase es una plataforma de Google que permite conectar tu aplicación web o móvil fácilmente con una base de datos, autenticación y mucho más.",
+      "category": "Backend",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-2025-techtalent-fullstack-web-developers-tarragona.JPG?alt=media&token=edea51bd-55db-4732-b1d9-a755172ffe70",
+      "date": "2025-07-19"
+    },
+    "post3": {
+      "title": "Tips de CSS para mejorar el diseño de tu web",
+      "content": "Flexbox, Grid y animaciones pueden hacer que tu sitio destaque. Aprende algunas buenas prácticas de CSS modernas.",
+      "category": "Diseño",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-techtalent-tarragona-julio-2025-fullstack-web-developers.JPG?alt=media&token=cf7a8288-3c77-4a68-933a-2402a11826ff",
+      "date": "2025-07-18"
+    },
+    "post4": {
+      "title": "Introducción a React con TypeScript",
+      "content": "React es una librería de JavaScript para construir interfaces de usuario. Combinado con TypeScript nos da seguridad de tipos y una mejor experiencia de desarrollo.",
+      "category": "Frontend",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-techtalent-fullstack-web-developers-tarragona-2025.JPG?alt=media&token=77927f91-e4cd-4317-b2ba-eb70b5ee00d0",
+      "date": "2025-07-20"
+    },
+    "post5": {
+      "title": "Cómo conectar Firebase con tu app",
+      "content": "Firebase es una plataforma de Google que permite conectar tu aplicación web o móvil fácilmente con una base de datos, autenticación y mucho más.",
+      "category": "Backend",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-2025-techtalent-fullstack-web-developers-tarragona.JPG?alt=media&token=edea51bd-55db-4732-b1d9-a755172ffe70",
+      "date": "2025-07-19"
+    },
+    "post6": {
+      "title": "Tips de CSS para mejorar el diseño de tu web",
+      "content": "Flexbox, Grid y animaciones pueden hacer que tu sitio destaque. Aprende algunas buenas prácticas de CSS modernas.",
+      "category": "Diseño",
+      "image": "https://firebasestorage.googleapis.com/v0/b/webapp-angular-tgn-2024.appspot.com/o/bootcamp-techtalent-tarragona-julio-2025-fullstack-web-developers.JPG?alt=media&token=cf7a8288-3c77-4a68-933a-2402a11826ff",
+      "date": "2025-07-18"
+    }
+  }
+}
