@@ -1,45 +1,42 @@
-import { useState } from "react";
-import { usePosts } from "../hooks/usePosts";
-import BlogPostCard from "../components/BlogPostCard";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const POSTS_PER_PAGE = 2;
+interface Post {
+  id: string;
+  title: string;
+  content: string;
+  category: string;
+  date: string;
+  image: string;
+}
 
-const Blog = () => {
-  const { posts, loading } = usePosts();
-  const [page, setPage] = useState(1);
+function Home() {
+  const [posts, setPosts] = useState<Post[]>([]);
 
-  const start = (page - 1) * POSTS_PER_PAGE;
-  const currentPosts = posts.slice(start, start + POSTS_PER_PAGE);
-
-  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+  useEffect(() => {
+    fetch('https://bootcamp-techtalent-2025-default-rtdb.europe-west1.firebasedatabase.app/posts.json')
+      .then(res => res.json())
+      .then(data => {
+        const loadedPosts: Post[] = Object.entries(data).map(([id, post]) => ({
+          id,
+          ...(post as Omit<Post, 'id'>),
+        }));
+        setPosts(loadedPosts);
+      });
+  }, []);
 
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Blog</h1>
-      {loading ? (
-        <p>Cargando...</p>
-      ) : (
-        <>
-          <div className="grid">
-            {currentPosts.map((post) => (
-              <BlogPostCard key={post.id} post={post} />
-            ))}
-          </div>
-          <div className="pagination">
-            {Array.from({ length: totalPages }, (_, i) => (
-              <button
-                key={i}
-                onClick={() => setPage(i + 1)}
-                className={page === i + 1 ? "active" : ""}
-              >
-                {i + 1}
-              </button>
-            ))}
-          </div>
-        </>
-      )}
+    <div className="post-grid">
+      {posts.map(post => (
+        <div key={post.id} className="post-card">
+          <img src={post.image} alt={post.title} />
+          <h2>{post.title}</h2>
+          <p>{post.category} · {post.date}</p>
+          <Link to={`/posts/${post.id}`}>Leer más</Link> {/* ✅ Enlace dinámico */}
+        </div>
+      ))}
     </div>
   );
-};
+}
 
-export default Blog;
+export default Home;
