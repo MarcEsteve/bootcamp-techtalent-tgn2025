@@ -1,0 +1,17 @@
+{
+  "redactor1": {
+    "username": "mariaweb",
+    "email": "maria@example.com",
+    "password": "maria123"
+  },
+  "redactor2": {
+    "username": "carlosdev",
+    "email": "carlos@example.com",
+    "password": "carlos456"
+  },
+  "redactor3": {
+    "username": "lauraux",
+    "email": "laura@example.com",
+    "password": "laura789"
+  }
+}
